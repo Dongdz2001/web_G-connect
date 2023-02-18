@@ -24,6 +24,7 @@
     <script src="..//controller//javaScriptController//render_student_table.js"></script>
     <script src="..//controller//javaScriptController//check_value_add_information.js"></script>
     <script src="..//controller//javaScriptController//update_student_object_in_table.js"></script>
+    <script src="..//controller//javaScriptController//search_student_input_controller.js"></script>
 
     <!-- import các model trong model javascrip -->
     <script src='..//model//javaScriptModel//manager_student.js'></script>
@@ -58,9 +59,9 @@
 
                     <div class="d-flex">
                         <button class="btn1 mx-auto btn btn-action
-                                        btn-submit mt-3">Xóa</button>
+                                        btn-submit mt-3" type="button" onclick="delete_value_search()">Xóa</button>
                         <button class="mx-auto btn btn-action
-                                        btn-submit mt-3">Tìm
+                                        btn-submit mt-3" type="button" onclick="search_input_table_student()">Tìm
                             kiếm</button>
                     </div>
                 </form>

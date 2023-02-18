@@ -1,5 +1,22 @@
 let manager = new Manager_Student();
 
+ // Định nghĩa các ký tụ ngăn cách có thể có để kiểm tra
+ var char = [
+  "/",
+  "*",
+  "-",
+  "|",
+  "\\",
+  "_",
+  "+",
+  "$",
+  "%",
+  "^",
+  "&",
+  "?",
+  "=",
+];
+
 function run_main() {
   let student = new Student(
     "123123123",
