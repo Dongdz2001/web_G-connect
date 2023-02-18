@@ -13,7 +13,7 @@ function addInformationToTable() {
   outputTbl.appendChild(output);
 
   // Thêm các thông tin sinh viên thành 1 dòng mới trong bảng "table-display-student"
-  output.innerHTML += '<td> <input type="checkbox" name="checkbox"> </td>';
+  output.innerHTML += `<td> <input type="checkbox" name="checkbox" value=\"${getInputCodeStudent()}\"> </td>`;
   output.innerHTML += "<td>" + getInputCodeStudent() + "</td>";
   output.innerHTML += "<td>" + getInputNameStudent() + "</td>";
   output.innerHTML += "<td>" + getInputDateStudent() + "</td>";

@@ -10,7 +10,7 @@
       var output = document.createElement("tr");
       outputTbl.appendChild(output);
       // Thêm các thông tin sinh viên thành 1 dòng mới trong bảng "table-display-student"
-      output.innerHTML += '<td> <input type="checkbox" name="checkbox"> </td>';
+      output.innerHTML += `<td> <input type="checkbox" name="checkbox" value=\"${element.get_Code()}\"> </td>`;
       output.innerHTML += "<td>" + element.get_Code() + "</td>";
       output.innerHTML += "<td>" + element.get_Name() + "</td>";
       output.innerHTML += "<td>" + element.get_Date() + "</td>";
@@ -29,7 +29,7 @@
       var output = document.createElement("tr");
       outputTbl.appendChild(output);
       // Thêm các thông tin sinh viên thành 1 dòng mới trong bảng "table-display-student"
-      output.innerHTML += '<td> <input type="checkbox" name="checkbox"> </td>';
+      output.innerHTML += `<td> <input type="checkbox" name="checkbox" value=\"${element.get_Code()}\"> </td>`;
       output.innerHTML += "<td>" + element.get_Code() + "</td>";
       output.innerHTML += "<td>" + element.get_Name() + "</td>";
       output.innerHTML += "<td>" + element.get_Date() + "</td>";

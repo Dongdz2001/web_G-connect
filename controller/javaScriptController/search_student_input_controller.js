@@ -89,11 +89,19 @@ function get_order_search(input) {
 function search_input_table_student() {
   // lấy giá trị nhập
   var value_input_search = get_value_input_table();
+  
 
   // chọn chức năng tìm kiếm
   var order_search = get_order_search(value_input_search);
   // thực hiện chức năng tìm kiếm theo require đã chọn
   var list_result_students = manager.get_list_Student();
+    
+  // nếu string "" thì hiển thị lại toàn danh sách
+  if (value_input_search.replaceAll(" ","") == "") {
+    render_table_student_by_list_student_object(list_result_students);
+    return ;
+  }
+
   switch (order_search) {
     case 1:
       list_result_students = manager.search_student_by_code(
