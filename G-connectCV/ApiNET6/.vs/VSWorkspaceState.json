@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\App.Api",
+    "\\App.Api\\IdentityServer",
+    "\\App.Api\\IdentityServer\\CussomIdentityServer",
+    "\\App.Business",
+    "\\App.Business\\Services",
+    "\\App.Business\\Services\\DBAll",
+    "\\App.Business\\Services\\DBAll\\GC_CONG_VIEC",
+    "\\App.Business\\Services\\DBAll\\GC_LICH_HANG_NGAY"
+  ],
+  "SelectedNode": "\\App.Business\\Services\\DBAll\\GC_LICH_HANG_NGAY\\GC_LICH_HANG_NGAYService.cs",
+  "PreviewInSolutionExplorer": false
+}

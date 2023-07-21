@@ -1,0 +1,3921 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.Api</name>
+    </assembly>
+    <members>
+        <member name="T:App.Api.Controllers.DBAll.GC_CHUC_NANGController">
+            <summary>
+            GC_CHUC_NANG
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.Create(App.Business.Services.DBAll.GC_CHUC_NANGDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.Update(App.Business.Services.DBAll.GC_CHUC_NANGDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CHUC_NANGController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_CONG_VIECController">
+            <summary>
+            GC_CONG_VIEC
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.Create(App.Business.Services.DBAll.GC_CONG_VIECDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.Update(App.Business.Services.DBAll.GC_CONG_VIECDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIECController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController">
+            <summary>
+            GC_CONG_VIEC_CHECKLIST
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.Create(App.Business.Services.DBAll.GC_CONG_VIEC_CHECKLISTDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.Update(App.Business.Services.DBAll.GC_CONG_VIEC_CHECKLISTDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_CHECKLISTController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController">
+            <summary>
+            GC_CONG_VIEC_PHAN_CONG
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.Create(App.Business.Services.DBAll.GC_CONG_VIEC_PHAN_CONGDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.Update(App.Business.Services.DBAll.GC_CONG_VIEC_PHAN_CONGDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController">
+            <summary>
+            GC_DM_LINH_VUC
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.Create(App.Business.Services.DBAll.GC_DM_LINH_VUCDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.Update(App.Business.Services.DBAll.GC_DM_LINH_VUCDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LINH_VUCController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController">
+            <summary>
+            GC_DM_LOAI_CHECK_LIST
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.Create(App.Business.Services.DBAll.GC_DM_LOAI_CHECK_LISTDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.Update(App.Business.Services.DBAll.GC_DM_LOAI_CHECK_LISTDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_CHECK_LISTController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController">
+            <summary>
+            GC_DM_LOAI_DU_AN
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.Create(App.Business.Services.DBAll.GC_DM_LOAI_DU_ANDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.Update(App.Business.Services.DBAll.GC_DM_LOAI_DU_ANDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_LOAI_DU_ANController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController">
+            <summary>
+            GC_DM_TRANG_THAI
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.Create(App.Business.Services.DBAll.GC_DM_TRANG_THAIDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.Update(App.Business.Services.DBAll.GC_DM_TRANG_THAIDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DM_TRANG_THAIController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_DU_ANController">
+            <summary>
+            GC_DU_AN
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.Create(App.Business.Services.DBAll.GC_DU_ANDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.Update(App.Business.Services.DBAll.GC_DU_ANDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_DU_ANController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController">
+            <summary>
+            GC_LICH_HANG_NGAY
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Create(App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Update(App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_LICH_TUANController">
+            <summary>
+            GC_LICH_TUAN
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.Create(App.Business.Services.DBAll.GC_LICH_TUANDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.Update(App.Business.Services.DBAll.GC_LICH_TUANDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_LICH_TUANController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController">
+            <summary>
+            GC_VAN_DE_CAN_GIAI_QUYET
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Create(App.Business.Services.DBAll.GC_VAN_DE_CAN_GIAI_QUYETDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Update(App.Business.Services.DBAll.GC_VAN_DE_CAN_GIAI_QUYETDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiResourceClaimsController">
+            <summary>
+            ApiResourceClaims
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.Create(App.Business.Services.QTHT2.ApiResourceClaimsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.Update(App.Business.Services.QTHT2.ApiResourceClaimsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceClaimsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiResourcePropertiesController">
+            <summary>
+            ApiResourceProperties
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.Create(App.Business.Services.QTHT2.ApiResourcePropertiesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.Update(App.Business.Services.QTHT2.ApiResourcePropertiesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcePropertiesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiResourcesController">
+            <summary>
+            ApiResources
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.Create(App.Business.Services.QTHT2.ApiResourcesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.Update(App.Business.Services.QTHT2.ApiResourcesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourcesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiResourceScopesController">
+            <summary>
+            ApiResourceScopes
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.Create(App.Business.Services.QTHT2.ApiResourceScopesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.Update(App.Business.Services.QTHT2.ApiResourceScopesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceScopesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiResourceSecretsController">
+            <summary>
+            ApiResourceSecrets
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.Create(App.Business.Services.QTHT2.ApiResourceSecretsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.Update(App.Business.Services.QTHT2.ApiResourceSecretsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiResourceSecretsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiScopeClaimsController">
+            <summary>
+            ApiScopeClaims
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.Create(App.Business.Services.QTHT2.ApiScopeClaimsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.Update(App.Business.Services.QTHT2.ApiScopeClaimsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopeClaimsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiScopePropertiesController">
+            <summary>
+            ApiScopeProperties
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.Create(App.Business.Services.QTHT2.ApiScopePropertiesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.Update(App.Business.Services.QTHT2.ApiScopePropertiesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopePropertiesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ApiScopesController">
+            <summary>
+            ApiScopes
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.Create(App.Business.Services.QTHT2.ApiScopesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.Update(App.Business.Services.QTHT2.ApiScopesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ApiScopesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientClaimsController">
+            <summary>
+            ClientClaims
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.Create(App.Business.Services.QTHT2.ClientClaimsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.Update(App.Business.Services.QTHT2.ClientClaimsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientClaimsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientCorsOriginsController">
+            <summary>
+            ClientCorsOrigins
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.Create(App.Business.Services.QTHT2.ClientCorsOriginsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.Update(App.Business.Services.QTHT2.ClientCorsOriginsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientCorsOriginsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientGrantTypesController">
+            <summary>
+            ClientGrantTypes
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.Create(App.Business.Services.QTHT2.ClientGrantTypesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.Update(App.Business.Services.QTHT2.ClientGrantTypesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientGrantTypesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController">
+            <summary>
+            ClientIdPRestrictions
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.Create(App.Business.Services.QTHT2.ClientIdPRestrictionsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.Update(App.Business.Services.QTHT2.ClientIdPRestrictionsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientIdPRestrictionsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController">
+            <summary>
+            ClientPostLogoutRedirectUris
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.Create(App.Business.Services.QTHT2.ClientPostLogoutRedirectUrisDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.Update(App.Business.Services.QTHT2.ClientPostLogoutRedirectUrisDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPostLogoutRedirectUrisController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientPropertiesController">
+            <summary>
+            ClientProperties
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.Create(App.Business.Services.QTHT2.ClientPropertiesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.Update(App.Business.Services.QTHT2.ClientPropertiesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientPropertiesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientRedirectUrisController">
+            <summary>
+            ClientRedirectUris
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.Create(App.Business.Services.QTHT2.ClientRedirectUrisDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.Update(App.Business.Services.QTHT2.ClientRedirectUrisDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientRedirectUrisController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientsController">
+            <summary>
+            Clients
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.Create(App.Business.Services.QTHT2.ClientsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.Update(App.Business.Services.QTHT2.ClientsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientScopesController">
+            <summary>
+            ClientScopes
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.Create(App.Business.Services.QTHT2.ClientScopesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.Update(App.Business.Services.QTHT2.ClientScopesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientScopesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.ClientSecretsController">
+            <summary>
+            ClientSecrets
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.Create(App.Business.Services.QTHT2.ClientSecretsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.Update(App.Business.Services.QTHT2.ClientSecretsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.ClientSecretsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.DeviceCodesController">
+            <summary>
+            DeviceCodes
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.Create(App.Business.Services.QTHT2.DeviceCodesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.Update(App.Business.Services.QTHT2.DeviceCodesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.DeviceCodesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.IdentityResourceClaimsController">
+            <summary>
+            IdentityResourceClaims
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.Create(App.Business.Services.QTHT2.IdentityResourceClaimsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.Update(App.Business.Services.QTHT2.IdentityResourceClaimsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourceClaimsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController">
+            <summary>
+            IdentityResourceProperties
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.Create(App.Business.Services.QTHT2.IdentityResourcePropertiesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.Update(App.Business.Services.QTHT2.IdentityResourcePropertiesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcePropertiesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.IdentityResourcesController">
+            <summary>
+            IdentityResources
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.Create(App.Business.Services.QTHT2.IdentityResourcesDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.Update(App.Business.Services.QTHT2.IdentityResourcesDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.IdentityResourcesController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.PersistedGrantsController">
+            <summary>
+            PersistedGrants
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.GetById(System.Int32)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.Create(App.Business.Services.QTHT2.PersistedGrantsDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.Update(App.Business.Services.QTHT2.PersistedGrantsDTO,System.Int32)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.Delete(System.Int32)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.PersistedGrantsController.Deletes(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController">
+            <summary>
+            qtht_cau_hinh_ma
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.Create(App.Business.Services.QTHT2.qtht_cau_hinh_maDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.Update(App.Business.Services.QTHT2.qtht_cau_hinh_maDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_cau_hinh_maController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_chuc_vuController">
+            <summary>
+            qtht_chuc_vu
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.Create(App.Business.Services.QTHT2.qtht_chuc_vuDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.Update(App.Business.Services.QTHT2.qtht_chuc_vuDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_chuc_vuController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_dieu_huongController">
+            <summary>
+            qtht_dieu_huong
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.Create(App.Business.Services.QTHT2.qtht_dieu_huongDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.Update(App.Business.Services.QTHT2.qtht_dieu_huongDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_dieu_huongController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController">
+            <summary>
+            qtht_file_dinh_kem
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.Create(App.Business.Services.QTHT2.qtht_file_dinh_kemDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.Update(App.Business.Services.QTHT2.qtht_file_dinh_kemDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_file_dinh_kemController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_google_configController">
+            <summary>
+            qtht_google_config
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.Create(App.Business.Services.QTHT2.qtht_google_configDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.Update(App.Business.Services.QTHT2.qtht_google_configDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_google_configController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nguoi_dungController">
+            <summary>
+            qtht_nguoi_dung
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.Create(App.Business.Services.QTHT2.qtht_nguoi_dungDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.Update(App.Business.Services.QTHT2.qtht_nguoi_dungDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dungController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController">
+            <summary>
+            qtht_nguoi_dung_2_nhom_nguoi_dung
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.Create(App.Business.Services.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.Update(App.Business.Services.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nguoi_dung_2_nhom_nguoi_dungController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController">
+            <summary>
+            qtht_nhat_ky_he_thong
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.Create(App.Business.Services.QTHT2.qtht_nhat_ky_he_thongDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.Update(App.Business.Services.QTHT2.qtht_nhat_ky_he_thongDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thongController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController">
+            <summary>
+            qtht_nhat_ky_he_thong_loai
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.Create(App.Business.Services.QTHT2.qtht_nhat_ky_he_thong_loaiDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.Update(App.Business.Services.QTHT2.qtht_nhat_ky_he_thong_loaiDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhat_ky_he_thong_loaiController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController">
+            <summary>
+            qtht_nhom_nguoi_dung
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.Create(App.Business.Services.QTHT2.qtht_nhom_nguoi_dungDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.Update(App.Business.Services.QTHT2.qtht_nhom_nguoi_dungDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dungController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController">
+            <summary>
+            qtht_nhom_nguoi_dung_2_dieu_huong
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.GetAll(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.GetSelect(System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách 
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 bản ghi
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.Create(App.Business.Services.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongDTO)">
+            <summary>
+            Thêm mới 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.Update(App.Business.Services.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongDTO,System.Guid)">
+            <summary>
+            Cập nhật 
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.Delete(System.Guid)">
+            <summary>
+            Xóa 1
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT2.qtht_nhom_nguoi_dung_2_dieu_huongController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_CauHinhMaController">
+            <summary>
+            QTHT - cấu hình mã
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách chức năng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 chức năng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.Create(App.Business.Services.QTHT.CauHinhMaDTO)">
+            <summary>
+            Thêm mới chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.Update(App.Business.Services.QTHT.CauHinhMaDTO,System.Guid)">
+            <summary>
+            Cập nhật chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 chức năng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều chức năng
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_CauHinhMaController.GetByMa(System.String)">
+            <summary>
+            Lấy thông tin giá trị
+            </summary>
+            <param name="ma">là mà của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController">
+            <summary>
+            QTHT - đơn vị
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách chức năng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 chức năng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.Create(App.Business.Services.QTHT.ChucVuDTO)">
+            <summary>
+            Thêm mới chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.Update(App.Business.Services.QTHT.ChucVuDTO,System.Guid)">
+            <summary>
+            Cập nhật chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 chức năng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_PhieuDeXuatController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều chức năng
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_DieuHuongController">
+            <summary>
+            QTHT - điều hướng
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách người dùng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 người dùng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.Create(App.Business.Services.QTHT.DieuHuongDTO)">
+            <summary>
+            Thêm mới điều hướng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.Update(App.Business.Services.QTHT.DieuHuongDTO,System.Guid)">
+            <summary>
+            Cập nhật người dùng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 người dùng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều người dùng 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.GetTreeDieuHuong">
+            <summary>
+            Lấy tree điều hướng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.GetTreeDieuHuongForm">
+            <summary>
+            Lấy tree điều hướng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.PhanLoaiDieuHuong">
+            <summary>
+            Lấy tree điều hướng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.GetFlatDieuHuong">
+            <summary>
+            Lấy flat điều hướng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_DieuHuongController.GetStt(System.Nullable{System.Guid})">
+            <summary>
+            Lấy tree điều hướng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_GoogleApiController">
+            <summary>
+            QTHT - tiểu mục
+            </summary>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_NguoiDungController">
+            <summary>
+            QTHT - Người dùng
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.Get(System.Int32,System.Int32,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Lấy danh sách người dùng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <param name="is_select_data">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 người dùng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.Create(App.Business.Services.QTHT.NguoiDungDTO)">
+            <summary>
+            Thêm mới người dùng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.Update(App.Business.Services.QTHT.NguoiDungDTO,System.Guid)">
+            <summary>
+            Cập nhật người dùng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 người dùng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều người dùng 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.ResetPassword(System.Guid)">
+            <summary>
+            Reset password
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.AddGroupToUser(App.Business.Services.QTHT.UpdateNhomNDFromND)">
+            <summary>
+            Thêm mới nhóm cho người dùng vào bảng trung gian
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.OpenUnlockAccount(System.Guid)">
+            <summary>
+            Khóa, mở tài khoản
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.CheckLockTK(System.Guid)">
+            <summary>
+            Khóa, mở tài khoản
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NguoiDungController.DoiMatKhau(System.String)">
+            <summary>
+            Khóa, mở tài khoản
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="T:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController">
+            <summary>
+            QTHT - đơn vị
+            </summary>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách chức năng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 chức năng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.Create(App.Business.Services.QTHT.NhatKyHeThongDTO)">
+            <summary>
+            Thêm mới chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.Update(App.Business.Services.QTHT.NhatKyHeThongDTO,System.Guid)">
+            <summary>
+            Cập nhật chức năng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 chức năng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhatKyHeThongController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều chức năng
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.Get(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Lấy danh sách người dùng
+            </summary>
+            <param name="page">default = 1, lựa chọn page hiển thị</param>
+            <param name="page_size"> cấu hình số dòng trả ra trong 1 page </param>
+            <param name="sort">  sort = { field:value }</param>
+            <param name="filter"> filter = { field:value }</param>
+            <param name="search">Từ khóa tìm kiếm </param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.GetById(System.Guid)">
+            <summary>
+            Lấy thông tin 1 người dùng
+            </summary>
+            <param name="id">là id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.Create(App.Business.Services.QTHT.NhomNguoiDungDTO)">
+            <summary>
+            Thêm mới người dùng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.Update(App.Business.Services.QTHT.NhomNguoiDungDTO,System.Guid)">
+            <summary>
+            Cập nhật người dùng
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu cập nhật</param>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.Delete(System.Guid)">
+            <summary>
+            Xóa 1 người dùng
+            </summary>
+            <param name="id">id của bản ghi</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.Deletes(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            Xóa nhiều người dùng 
+            </summary>
+            <param name="ids"> VD: ids=id1,id2,id3</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.AddUserToGroup(App.Business.Services.QTHT.UpdateNguoiDungFromNhomND)">
+            <summary>
+            Thêm mới người dùng vào bảng trung gian
+            </summary>
+            <param name="obj">object dạng json chứa dữ liệu thêm mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.Controllers.QTHT.QTHT_NhomNguoiDungController.AllUserQLTC">
+            <summary>
+            Lấy danh sách người dùng quản lý tài chính
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.IdentityServer.Account.MemoryCacheHelper.GetValue(System.String)">
+            <summary>
+            Get cache value by key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.IdentityServer.Account.MemoryCacheHelper.Add(System.String,System.Object,System.DateTimeOffset)">
+            <summary>
+            Add a cache object with date expiration
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="absExpiration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:App.Api.IdentityServer.Account.MemoryCacheHelper.Delete(System.String)">
+            <summary>
+            Delete cache value from key
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:App.Api.IdentityServer.Account.MemoryCacheHelper.Set(System.String,System.Object,System.DateTimeOffset)">
+            <summary>
+            Update a cache object with date expiration
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <param name="absExpiration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IdentityServerHost.Quickstart.UI.AccountController">
+            <summary>
+            This sample controller implements a typical login/logout/provision workflow for local and external accounts.
+            The login service encapsulates the interactions with the user data store. This data store is in-memory only and cannot be used for production!
+            The interaction service provides a way for the UI to communicate with identityserver for validation and context retrieval
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.AccountController.Login(System.String)">
+            <summary>
+            Entry point into the login workflow
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.AccountController.Login(IdentityServerHost.Quickstart.UI.LoginInputModel,System.String)">
+            <summary>
+            Handle postback from username/password login
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.AccountController.Logout(System.String)">
+            <summary>
+            Show logout page
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.AccountController.Logout(IdentityServerHost.Quickstart.UI.LogoutInputModel)">
+            <summary>
+            Handle logout page postback
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.ExternalController.Challenge(System.String,System.String)">
+            <summary>
+            initiate roundtrip to external authentication provider
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.ExternalController.Callback">
+            <summary>
+            Post processing of external authentication
+            </summary>
+        </member>
+        <member name="T:IdentityServerHost.Quickstart.UI.ConsentController">
+            <summary>
+            This controller processes the consent UI
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.ConsentController.Index(System.String)">
+            <summary>
+            Shows the consent screen
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.ConsentController.Index(IdentityServerHost.Quickstart.UI.ConsentInputModel)">
+            <summary>
+            Handles the consent screen postback
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.Extensions.IsNativeClient(IdentityServer4.Models.AuthorizationRequest)">
+            <summary>
+            Checks if the redirect URI is for a native client.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IdentityServerHost.Quickstart.UI.GrantsController">
+            <summary>
+            This sample controller allows a user to revoke grants given to clients
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.GrantsController.Index">
+            <summary>
+            Show list of grants
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.GrantsController.Revoke(System.String)">
+            <summary>
+            Handle postback to revoke a client
+            </summary>
+        </member>
+        <member name="M:IdentityServerHost.Quickstart.UI.HomeController.Error(System.String)">
+            <summary>
+            Shows the error page
+            </summary>
+        </member>
+    </members>
+</doc>

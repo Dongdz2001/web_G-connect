@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\QLNV\**" />
+    <Compile Remove="Services\QLTC\**" />
+    <Compile Remove="Services\QTHT\ChuyenGia\**" />
+    <Compile Remove="Services\QTHT\DanhMucTongHop\**" />
+    <Compile Remove="Services\QTHT\DiaBan\**" />
+    <Compile Remove="Services\QTHT\HocHamHocVi\**" />
+    <Compile Remove="Services\QTHT\VanBanBieuMau\**" />
+    <EmbeddedResource Remove="Services\QLNV\**" />
+    <EmbeddedResource Remove="Services\QLTC\**" />
+    <EmbeddedResource Remove="Services\QTHT\ChuyenGia\**" />
+    <EmbeddedResource Remove="Services\QTHT\DanhMucTongHop\**" />
+    <EmbeddedResource Remove="Services\QTHT\DiaBan\**" />
+    <EmbeddedResource Remove="Services\QTHT\HocHamHocVi\**" />
+    <EmbeddedResource Remove="Services\QTHT\VanBanBieuMau\**" />
+    <None Remove="Services\QLNV\**" />
+    <None Remove="Services\QLTC\**" />
+    <None Remove="Services\QTHT\ChuyenGia\**" />
+    <None Remove="Services\QTHT\DanhMucTongHop\**" />
+    <None Remove="Services\QTHT\DiaBan\**" />
+    <None Remove="Services\QTHT\HocHamHocVi\**" />
+    <None Remove="Services\QTHT\VanBanBieuMau\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\TrienKhaiNV\KeHoachNam\KeHoachNamService.cs~RF10b34d3b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Data" Version="5.0.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.12.1" />
+    <PackageReference Include="EPPlus" Version="4.5.2.1" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.50.0.2224" />
+    <PackageReference Include="MailMergeLib" Version="5.7.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.DynamicLinq" Version="3.2.7" />
+    <PackageReference Include="NetOfficeFw.Core" Version="1.8.1" />
+    <PackageReference Include="NetOfficeFw.Excel" Version="1.8.1" />
+    <PackageReference Include="NetOfficeFw.Word" Version="1.8.1" />
+    <PackageReference Include="OpenXmlPowerTools-NetStandard" Version="4.4.21" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Common\App.Common.csproj" />
+    <ProjectReference Include="..\App.Data\App.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\QTHT\ChucVu\" />
+    <Folder Include="Services\QTHT\FileDinhkem\" />
+  </ItemGroup>
+
+</Project>

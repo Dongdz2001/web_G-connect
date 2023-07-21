@@ -1,0 +1,11 @@
+import React from 'react'
+
+const IssueFormView = () => {
+  return (
+    <div>
+      bcd
+    </div>
+  )
+}
+
+export default IssueFormView

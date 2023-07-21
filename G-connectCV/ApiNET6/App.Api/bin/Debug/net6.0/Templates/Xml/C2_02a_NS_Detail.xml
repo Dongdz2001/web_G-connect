@@ -1,0 +1,32 @@
+﻿<void method="add">
+  <object class="dvc.service.custom.TemplateChungTuGt">
+    <void property="dmChuong">
+      <string>017</string>
+    </void>
+    <void property="dmNdkt">
+      <string>7049</string>
+    </void>
+    <void property="dmNganhKt">
+      <string>101</string>
+    </void>
+    <void property="dmNguonchi">
+      <string>16</string>
+    </void>
+    <void property="dvNhantien">
+      <double>0.00000000000000E+000</double>
+    </void>
+    <void property="dvNopthue">
+      <double>0.00000000000000E+000</double>
+    </void>
+    <void property="maHang">
+      <string>1</string>
+    </void>
+    <void property="noiDung">
+      <string></string>
+    </void>
+    <void property="soTien">
+      <double>0.00000000000000E+000</double>
+    </void>
+  </object>
+</void>
+

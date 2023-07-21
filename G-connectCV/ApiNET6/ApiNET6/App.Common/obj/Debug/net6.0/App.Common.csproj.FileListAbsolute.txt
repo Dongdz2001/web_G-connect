@@ -1,0 +1,12 @@
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\bin\Debug\net6.0\App.Common.deps.json
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\bin\Debug\net6.0\App.Common.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\bin\Debug\net6.0\App.Common.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.csproj.AssemblyReference.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.AssemblyInfoInputs.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.AssemblyInfo.cs
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.csproj.CoreCompileInputs.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\refint\App.Common.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\App.Common.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\ApiNET6\App.Common\obj\Debug\net6.0\ref\App.Common.dll

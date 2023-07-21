@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<java version="1.7.0_17" class="java.beans.XMLDecoder">
+  <object class="dvc.service.custom.TemplateChungTu">
+    <void property="dmTiente">
+      <string>VND</string>
+    </void>
+    <void property="dvqhnsCancuTuUt">
+      <string>0</string>
+    </void>
+    <void property="dvqhnsCancuTuUtKbnn" />
+    <void property="dvqhnsCancuTuUtKbnnTen">
+      <string>Kho bạc NN TP Hà Nội</string>
+    </void>
+    <void property="dvqhnsCancuTuUtNgay">
+      <object class="java.sql.Timestamp">
+        <long>1618790400000</long>
+      </object>
+    </void>
+    <void property="dvqhnsCapns" />
+    <void property="dvqhnsCtmt">
+      <string>NDT.41.LA/18</string>
+    </void>
+    <void property="dvqhnsCtmtMa">
+      <string>NDT.41.LA/18</string>
+    </void>
+    <void property="dvqhnsCtmtTen">
+      <string>Hỗ trợ Bộ Khoa học và Công nghệ, Cộng hòa Dân chủ Nhân dân Lào xây dựng “Trung tâm Thử nghiệm không phá hủy và kỹ thuật hạt nhân”</string>
+    </void>
+    <void property="dvqhnsKbnn" />
+    <void property="dvqhnsMa">
+      <string>1115577</string>
+    </void>
+    <void property="dvqhnsNamns">
+      <long>2021</long>
+    </void>
+    <void property="dvqhnsSotk">
+      <string>9527.1.1115577</string>
+    </void>
+    <void property="dvqhnsSotkSo">
+      <string>9527.1.1115577</string>
+    </void>
+    <void property="dvqhnsTen">
+      <string>Văn phòng các Chương trình Khoa học và Công nghệ quốc gia</string>
+    </void>
+    <void property="dvqhnsThanhtoanThanhTcUt">
+      <string>0</string>
+    </void>
+    <void property="dvqhnsThanhtoanTuUt">
+      <string>0</string>
+    </void>
+    <void property="gnHosoC203GtByGnHosoC203">
+      <object class="java.util.ArrayList">               
+      </object>
+    </void>
+    <void property="gnTaiLieuId">
+      <long>88</long>
+    </void>
+    <void property="ngayChungTu">
+      <object class="java.sql.Timestamp">
+        <long>1618790400000</long>
+      </object>
+    </void>
+    <void property="par1">
+      <string>Hai tỷ hai trăm năm mươi triệu đồng chẵn</string>
+    </void>
+    <void property="soChungTu">
+      <string>BKTT04-NDT41</string>
+    </void>
+    <void property="tongSoTien">
+      <double>2.25000000000000E+009</double>
+    </void>
+    <void property="tuUt">
+      <string>0</string>
+    </void>
+    <void property="typeChungTu">
+      <long>2</long>
+    </void>
+  </object>
+</java>

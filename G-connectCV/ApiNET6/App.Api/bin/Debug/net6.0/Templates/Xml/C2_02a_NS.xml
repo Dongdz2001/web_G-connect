@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<java version="1.7.0_17" class="java.beans.XMLDecoder">
+  <object class="dvc.service.custom.TemplateChungTu">
+    <void property="chuyenkhoanTienmat">
+      <string>0</string>
+    </void>
+    <void property="dmDvqhns">
+      <string>1115577</string>
+    </void>
+    <void property="dmTiente">
+      <string>VND</string>
+    </void>
+    <void property="dvNhantienCtmt" />
+    <void property="dvNhantienDiachi">
+      <string>140 Nguyễn Tuân, Thanh Xuân, Hà Nội</string>
+    </void>
+    <void property="dvNhantienKbnn" />
+    <void property="dvNhantienKbnnTen">
+      <string>Kho bạc Nhà nước Quận Thanh Xuân, Hà Nội (0022)</string>
+    </void>
+    <void property="dvNhantienLoai">
+      <long>0</long>
+    </void>
+    <void property="dvNhantienMa" />
+    <void property="dvNhantienSotiennhan">
+      <double>0.00000000000000E+000</double>
+    </void>
+    <void property="dvNhantienSotkSo">
+      <string>3713.0.1085561.00000</string>
+    </void>
+    <void property="dvNhantienTen">
+      <string>Trung tâm Đánh giá không phá hủy</string>
+    </void>
+    <void property="dvNopthueSotiennop">
+      <double>0.00000000000000E+000</double>
+    </void>
+    <void property="dvqhnsCapns">
+      <string>1</string>
+    </void>
+    <void property="dvqhnsCkcHdk">
+		<string></string>
+	</void>
+    <void property="dvqhnsCkcHdth">
+		<string></string>
+	</void>
+    <void property="dvqhnsCtmt">
+      <string>NDT.41.LA/18</string>
+    </void>
+    <void property="dvqhnsKbnn" />
+    <void property="dvqhnsMa">
+      <string>1115577</string>
+    </void>
+    <void property="dvqhnsNamns">
+      <long>2021</long>
+    </void>
+    <void property="dvqhnsTen">
+      <string>Văn phòng các Chương trình Khoa học và Công nghệ quốc gia</string>
+    </void>
+    <void property="gnHosoC202GtByGnHosoC202">
+      <object class="java.util.ArrayList">        
+      </object>
+    </void>
+    <void property="gnTaiLieuId">
+      <long>423</long>
+    </void>
+    <void property="ngayChungTu">
+      <object class="java.sql.Timestamp">
+        <long>1618790400000</long>
+      </object>
+    </void>
+    <void property="par1">
+      <string>Không đồng</string>
+    </void>
+    <void property="soChungTu">
+      <string></string>
+    </void>
+    <void property="thucchiTamung">
+      <string>1</string>
+    </void>
+    <void property="tongSoTien">
+      <double></double>
+    </void>
+    <void property="typeChungTu">
+      <long>1</long>
+    </void>
+    <void property="nguoinhanHoten" />
+    <void property="nguoinhanSoCmnd" />
+    <void property="nguoinhanNgaycapCmndXml" />
+    <void property="nguoinhanNoicapCmnd" />
+  </object>
+</java>

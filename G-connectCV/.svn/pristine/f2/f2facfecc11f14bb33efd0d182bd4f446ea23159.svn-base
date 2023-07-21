@@ -1,0 +1,151 @@
+import { t } from "i18next";
+import { useEffect, useState, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { Link, Outlet, Route, Routes } from "react-router-dom";
+import { useMedia } from "shared/hooks/useMedia";
+import { removeToken, setTokenLMS } from "store/oauth/oauthSlice";
+import { useOnClickOutside } from "shared/hooks/useOnClickOutside";
+import { clientRouters } from "routers/clientRouters";
+import { getCurrentUserDefault } from "shared/utils/getCurrentUserDefault";
+
+export default function ClientLayout() {
+  const { id } = getCurrentUserDefault();
+  const dispatch = useDispatch();
+  const refLeftMenu = useRef();
+  const lmsMenuQLCV = useRef();
+  const [toggleLeftMenu, setToggleLeftMenu] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const breakpoint2 = useMedia();
+
+  const toggleMenu = () => {
+    if (!toggle) {
+      document.body.classList.add("sidebar-open");
+      if (breakpoint2.isLg) {
+        document.body.classList.add("sidebar-collapse");
+      }
+      if (breakpoint2.isMd) {
+        document.body.classList.remove("sidebar-collapse");
+      }
+    } else {
+      document.body.classList.remove("sidebar-open");
+      document.body.classList.remove("sidebar-collapse");
+    }
+    setToggle(!toggle);
+  };
+  useOnClickOutside(refLeftMenu, () => {
+    if (breakpoint2.isXs || breakpoint2.isSm) {
+      document.body.classList.remove("sidebar-open");
+      document.body.classList.remove("sidebar-collapse");
+      setToggle(false);
+    }
+    if (breakpoint2.isMd) {
+      document.body.classList.add("sidebar-collapse");
+      setToggle(false);
+    }
+  });
+  const onClickMenu = (ref) => {
+    if (!toggleLeftMenu) {
+      ref.current.classList.add("menu-is-opening");
+      ref.current.classList.add("menu-open");
+    } else {
+      ref.current.classList.remove("menu-is-opening");
+      ref.current.classList.remove("menu-open");
+    }
+    setToggleLeftMenu(!toggleLeftMenu);
+  };
+
+  return (
+    <div>
+      <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" onClick={() => toggleMenu()}>
+              <i className="fas fa-bars"></i>
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a href="#" className="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link"
+              data-toggle="dropdown"
+              href="/login"
+              title="logout"
+              onClick={() => {
+                dispatch(removeToken());
+              }}
+            >
+              <i className="pi pi-sign-out" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside
+        className="main-sidebar sidebar-dark-primary elevation-4"
+        ref={refLeftMenu}
+      >
+        <a href="/" className="brand-link">
+          <span className="brand-text font-weight-light">
+            Client - QL Công việc
+          </span>
+        </a>
+        <div className="sidebar">
+          <nav className="mt-2">
+            <ul
+              className="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              data-accordion="false"
+            >
+              <li ref={lmsMenuQLCV} className="nav-item">
+                <a
+                  href="#"
+                  className="nav-link"
+                  onClick={() => onClickMenu(lmsMenuQLCV)}
+                >
+                  <i className="nav-icon fa fa-cog fa-user fa-lg pre" />
+                  <p>
+                    Quản lý công việc
+                    <i className="right fas fa-angle-left" />
+                  </p>
+                </a>
+                <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      to={`/client/CL_LICH_TUAN/${id}`}
+                    >
+                      <i className="far fa-circle nav-icon" />
+                      <p>{"Client_Lịch_tuần"}</p>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div className="content-wrapper">
+        <div className="p-3">
+          <Routes>
+            {clientRouters.map(({ path, component: Component }, index) => (
+              //console.log(route)
+              <Route path={path} key={index} element={<Component />} />
+            ))}
+          </Routes>
+          <Outlet />
+        </div>
+      </div>
+    </div>
+  );
+}

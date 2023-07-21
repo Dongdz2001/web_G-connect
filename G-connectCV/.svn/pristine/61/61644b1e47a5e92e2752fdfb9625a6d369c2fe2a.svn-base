@@ -1,0 +1,25 @@
+import { loadable } from 'shared/utils';
+import IssueList from '../issue/IssueList';
+
+const issueroutes = [
+    
+    {
+        path: '/issues-form/:id',
+        component: loadable(() => import('../issue/IssueForm'))
+    },
+    {
+        path: '/issues-formview/:id',
+        component: loadable(() => import('../issue/IssueFormView'))
+    },
+    {
+        path: '/issue/',
+        component: loadable(() => import('../issue/IssueList'))
+    },
+    {
+        path: '/issue/:id',
+        component: loadable(() => import('../issue/IssueList'))
+    },
+   
+    
+]
+export { issueroutes };

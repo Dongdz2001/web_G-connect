@@ -1,0 +1,137 @@
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import { useCurrentUserDefault } from 'shared/hooks/useCurrentUserDefault';
+import { setLanguage } from 'store/oauth/oauthSlice';
+import { useDispatch } from 'react-redux';
+import { Card } from 'primereact/card';
+import { issueroutes } from './issue/issueroutes';
+import { getCurrentUserDefault } from 'shared/utils/getCurrentUserDefault';
+
+import { useEffect, useState, useRef, useCallback } from "react";
+import { Outlet, Route, Routes, Link } from "react-router-dom";
+import { removeToken, setTokenLMS } from "store/oauth/oauthSlice";
+
+const IssueLayout = () => {
+    const [isToggle, setIsToggle] = useState(false)
+    const dispatch = useDispatch();
+    const userFirstName = useSelector(state => state.oauth.UserFirstName) || '';
+    const currentUserDefault = useCurrentUserDefault();
+    const [visibleRight, setVisibleRight] = useState(false);
+    const { t, i18n } = useTranslation()
+
+
+    const changeLanguageHandler = (lang) => {
+        i18n.changeLanguage(lang);
+        dispatch(setLanguage(lang));
+    }
+    const toggle = () => {
+        if (!isToggle) {
+            document.body.classList.add('sidebar-collapse');
+
+        } else {
+            document.body.classList.remove('sidebar-collapse');
+        }
+        setIsToggle(!isToggle)
+        // document.body.classList.remove('overflow-y-disable');
+    }
+
+
+    return (
+
+        <div className='wrapper sidebar-mini '>
+            <nav className="main-header navbar navbar-expand navbar-white navbar-light " >
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a className="nav-link" onClick={toggle} ><i className="fas fa-bars"></i></a>
+                    </li>
+
+                    <li className="nav-item d-none d-sm-inline-block">
+                        <a className="nav-link" href='/' >Home</a>
+                    </li>
+                    <li className="nav-item d-none d-sm-inline-block">
+                        <a href="#" className="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link"
+                            data-toggle="dropdown"
+                            href="/login"
+                            title="logout"
+                            onClick={() => {
+                                dispatch(removeToken());
+                            }}
+                        >
+                            <i className="pi pi-sign-out" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside className="main-sidebar sidebar-dark-primary elevation-4" >
+                <div className="sidebar  d-flex flex-column align-items-center align-items-sm-start pt-2 pl-0 text-white min-vh-100">
+                    <ul className="nav nav-pills nav-sidebar  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu1">
+                        <li className="nav-item">
+                            <Link to={{ pathname: '/overview' }} className="nav-link">
+                                <i className="nav-icon fas fa-tachometer-alt" />
+                                <p>
+                                    {'Tổng quan'}
+                                </p>
+                            </Link>
+                            <ul style={{ display: 'none' }} className="collapse nav flex-column" id="tongquan" data-bs-parent="#menu1"></ul>
+
+                        </li>
+
+
+                        <li className="nav-item">
+                            <a href="/demo/lms-container" className="nav-link">
+                                <i className="nav-icon far fa-plus-square" />
+                                <p>
+                                    Demo
+                                </p>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="/admin/ClientCorsOrigins" className="nav-link">
+                                <i className="nav-icon far fa-plus-square" />
+                                <p>LMS Admin Vị trí</p>
+                            </a>
+                        </li>
+
+                        <li className="nav-item">
+                            <a href="/client/ClientCorsOrigin" className="nav-link">
+                                <i className="nav-icon far fa-plus-square" />
+                                <p>LMS Client</p>
+                            </a>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link className="nav-link" to={"/issues/issue/" + getCurrentUserDefault().id}>
+                                <i className="nav-icon far fa-plus-square" />
+                                <p>{" Các vấn đề cần giải quyết"}</p>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            {/* <  IssueList /> */}
+
+            <div className="content-wrapper">
+                <div className="container-fluid">
+                    <Routes>
+                        {issueroutes.map(({ path, component: Component }, index) => (
+                            //console.log(route)
+                            <Route path={path} key={index} element={<Component />} />
+                        ))}
+                    </Routes>
+                    <Outlet />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default IssueLayout

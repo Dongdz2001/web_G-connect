@@ -1,0 +1,410 @@
+import { Card } from "primereact/card";
+import { Column } from "primereact/column";
+import { Row } from "primereact/row";
+import { ColumnGroup } from "primereact/columngroup";
+import { DataTable } from "primereact/datatable";
+import { Dialog } from "primereact/dialog";
+import { InputText } from "primereact/inputtext";
+import { Toast } from "primereact/toast";
+import CLIENT_LICH_TUANForm from "./CLIENT_LICH_TUANForm";
+import CLIENT_LICH_TUANFormView from "./CLIENT_LICH_TUANFormView";
+import { useState, useRef, useEffect } from "react";
+import { Button } from "primereact/button";
+import { Dropdown } from "primereact/dropdown";
+import { DEFAULT_LIST_PARAM, DEFAULT_LIST_PAGE } from "shared/app-settings";
+import { useSelector } from "react-redux";
+import { mapPaginator } from "shared/utils";
+import { decodeUnicode } from "shared/utils/decodeHtmlEntites";
+
+import { GC_LICH_TUANService } from "modules/GC_LICH_TUAN/GC_LICH_TUANService";
+import { confirmDialogGlobal } from "shared/components/confirmDialogGlobal";
+
+export default function CLIENT_LICH_TUANList(props) {
+  const labelFind = "Tìm kiếm nâng cao";
+  const labelKeyword = "Từ khoá...";
+  const [loading, setLoading] = useState(false);
+  const [listItems, setListItems] = useState(null);
+  const [selectedItems, setSelectedItems] = useState([]);
+
+  const fieldID = "id";
+  const fieldSort = "id";
+  const fieldSortOrder = "ASC";
+  const titlePage = "Danh sách Lịch tuần, lịch thực tập";
+  const [showDialogView, setShowDialogView] = useState(false);
+  const [showDialogEdit, setShowDialogEdit] = useState(false);
+  const [showAdvancedSearch, setShowAdvancedSearch] = useState(false);
+  const showAdvancedSearchButton = true;
+  const [totalItems, setTotalItems] = useState(0);
+  const [listRef_id_nguoi_thuc_hien, setListRef_id_nguoi_thuc_hien] = useState(
+    []
+  );
+
+  const listParamStore = useSelector((state) => {
+    var param = null;
+    if (
+      state.listParam.find((st) => st && st.name == window.location.toString())
+    )
+      param = state.listParam.find(
+        (st) => st && st.name == window.location.toString()
+      ).param;
+    return param;
+  });
+  const [lazyParams, setLazyParams] = useState({
+    ...DEFAULT_LIST_PARAM,
+    ...{
+      sortField: fieldSort,
+      sortOrder: fieldSortOrder == "ASC" ? -1 : 1,
+    },
+    ...listParamStore,
+  });
+
+  useEffect(() => {
+    loadLazyData();
+  }, [lazyParams.refresh]);
+  useEffect(() => {
+    setTimeout(() => {
+      if (listParamStore && listParamStore.pageYOffset)
+        window.scrollTo(0, listParamStore.pageYOffset);
+    }, 100);
+
+    getListRef_id_nguoi_thuc_hien();
+  }, [window.location.href]);
+
+  const getListRef_id_nguoi_thuc_hien = () => {
+    return GC_LICH_TUANService.getAllRef_id_nguoi_thuc_hien().then((res) => {
+      res.data.map((x) => {
+        x.Value = x.value;
+        x.Text = x.label;
+      });
+      setListRef_id_nguoi_thuc_hien(res.data);
+    });
+  };
+
+  const openDialog = false;
+
+  const onShowAdvancedSearch = (event) => {
+    setShowAdvancedSearch(!showAdvancedSearch);
+  };
+  const onChangeKeySearch = (text) => {
+    //debugger
+    // setLazyParams({ ...lazyParams, keySearch: text });
+  };
+  const onFilter = (event) => {
+    // setLazyParams({ ...lazyParams, page: 0, first: 0, refresh: Date.now() });
+  };
+  const onPage = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const onSort = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const onSelectionChange = (event) => {
+    const value = event.value;
+    setSelectedItems(value);
+  };
+  const onEnterKeySearch = (event) => {
+    //debugger
+    if (event.key === "Enter") {
+      onFilter();
+    }
+    //Backspace
+  };
+
+  const loadLazyData = () => {
+    setLoading(true);
+    console.log(lazyParams);
+    let advanceSearch = mapPaginator(lazyParams);
+    return GC_LICH_TUANService.filterPage(advanceSearch).then((res) => {
+      setTotalItems(res.data.meta.total);
+      setListItems(res.data.data);
+      setLoading(false);
+    });
+  };
+
+  const deleteItems = async (items) => {
+    for (var i = 0; i < items.length; i++) {
+      await GC_LICH_TUANService.delete(items[i][fieldID]);
+    }
+    loadLazyData();
+  };
+  const confirmDelete = (data) => {
+    confirmDialogGlobal({
+      message: deleteMsg,
+      accept: () =>
+        data ? deleteItem(data[fieldID]) : deleteItems(selectedItems),
+      rejectClassName: "btnClose",
+      acceptClassName: "p-button-danger",
+    });
+  };
+  const paginatorLeft = (
+    <>
+      <Button
+        type="button"
+        icon="pi pi-refresh"
+        className="p-button-text p-button-secondary"
+        onClick={() => loadLazyData()}
+      />
+      <Dropdown
+        options={DEFAULT_LIST_PAGE}
+        className="mr-2"
+        value={lazyParams.rows}
+        onChange={(e) =>
+          setLazyParams({ ...lazyParams, first: 0, page: 1, rows: e.value })
+        }
+      />
+    </>
+  );
+  const actionBodyTemplate = (rowData) => {
+    return (
+      <React.Fragment>
+        <div className="flex flex-row justify-content-end">
+          <Link
+            to={openDialog ? null : linkEdit + "/" + rowData[fieldID]}
+            onClick={() => editItem(rowData[fieldID])}
+          >
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-pencil mr-2 flex align-items-center"></i>
+          </Link>
+          <Link
+            to={openDialog ? null : linkView + "/" + rowData[fieldID]}
+            onClick={() => viewItem(rowData[fieldID])}
+          >
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-info-circle mr-2 flex align-items-center"></i>
+          </Link>
+          <a onClick={() => confirmDelete(rowData)}>
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-trash mr-2 flex align-items-center p-button-danger p-button-outlined"></i>
+          </a>
+        </div>
+      </React.Fragment>
+    );
+  };
+  const headerGroup = (
+    <ColumnGroup>
+      <Row>
+        <Column className="text-center" rowSpan={2} header="TT" />
+        <Column
+          className="text-center"
+          rowSpan={2}
+          field="id_nguoi_thuc_hien"
+          header="Nhân viên"
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu2"
+          header={"Thứ 2"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu3"
+          header={"Thứ 3"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu4"
+          header={"Thứ 4"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu5"
+          header={"Thứ 5"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu6"
+          header={"Thứ 6"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu7"
+          header={"Thứ 7"}
+        />
+      </Row>
+      <Row>
+        <Column
+          className="text-center"
+          field="thu2_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu2_chieu"
+          
+          header="Chiều"
+        />
+        <Column
+          className="text-center"
+          field="thu3_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu3_chieu"
+          
+          header="Chiều"
+        />
+        <Column
+          className="text-center"
+          field="thu4_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu4_chieu"
+          
+          header="Chiều"
+        />
+        <Column
+          className="text-center"
+          field="thu5_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu5_chieu"
+          
+          header="Chiều"
+        />
+        <Column
+          className="text-center"
+          field="thu6_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu6_chieu"
+          
+          header="Chiều"
+        />
+        <Column
+          className="text-center"
+          field="thu7_sang"
+          
+          header="Sáng"
+        />
+        <Column
+          className="text-center"
+          field="thu7_chieu"
+          
+          header="Chiều"
+        />
+      </Row>
+    </ColumnGroup>
+  );
+  return (
+    <Card title={titlePage}>
+      <DataTable
+        value={listItems}
+        dataKey={fieldID}
+        emptyMessage={"Không có kết quả"}
+        size="small"
+        lazy
+        responsiveLayout="stack"
+        paginator
+        paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink"
+        currentPageReportTemplate="{first} - {last} / {totalRecords}"
+        paginatorLeft={paginatorLeft}
+        totalRecords={totalItems}
+        loading={loading}
+        rowsPerPageOptions={DEFAULT_LIST_PAGE}
+        rows={lazyParams.rows}
+        first={lazyParams.first}
+        sortField={lazyParams.sortField}
+        sortOrder={lazyParams.sortOrder}
+        onPage={onPage}
+        onSort={onSort}
+        onSelectionChange={onSelectionChange}
+        selection={selectedItems}
+        selectionMode="checkbox"
+        showGridlines
+        headerColumnGroup={headerGroup}
+      >
+        <Column
+          className="text-center"
+          rowSpan={2}
+          style={{ width: "40px" }}
+          body={(rowData, item) => {
+            return <>{item.rowIndex + 1}</>;
+          }}
+        />
+        <Column
+          className="text-center"
+          rowSpan={2}
+          field="id_nguoi_thuc_hien"
+          body={(rowData, column) =>
+            decodeUnicode(rowData.ten_id_nguoi_thuc_hien)
+          }
+        />
+        <Column
+          className="text-center"
+          field="thu2_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu2_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu2_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu2_chieu)}
+        />
+        <Column
+          className="text-center"
+          field="thu3_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu3_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu3_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu3_chieu)}
+        />
+        <Column
+          className="text-center"
+          field="thu4_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu4_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu4_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu4_chieu)}
+        />
+        <Column
+          className="text-center"
+          field="thu5_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu5_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu5_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu5_chieu)}
+        />
+        <Column
+          className="text-center"
+          field="thu6_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu6_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu6_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu6_chieu)}
+        />
+        <Column
+          className="text-center"
+          field="thu7_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu7_sang)}
+        />
+        <Column
+          className="text-center"
+          field="thu7_chieu"
+          body={(rowData, column) => decodeUnicode(rowData.thu7_chieu)}
+        />
+      </DataTable>
+    </Card>
+  );
+}

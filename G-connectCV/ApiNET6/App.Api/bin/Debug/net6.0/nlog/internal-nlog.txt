@@ -1,0 +1,297 @@
+2023-03-29 11:48:21.5201 Info Message Template Auto Format enabled
+2023-03-29 11:48:21.5407 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-29 11:48:21.8146 Info Adding target FileTarget(Name=allfile)
+2023-03-29 11:48:21.9617 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-29 11:48:22.0732 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-29 14:22:15.5581 Info Message Template Auto Format enabled
+2023-03-29 14:22:15.5861 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-29 14:22:15.8272 Info Adding target FileTarget(Name=allfile)
+2023-03-29 14:22:15.8564 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-29 14:22:16.0135 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-29 21:13:15.2004 Info Message Template Auto Format enabled
+2023-03-29 21:13:15.2541 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-29 21:13:15.4940 Info Adding target FileTarget(Name=allfile)
+2023-03-29 21:13:15.5191 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-29 21:13:15.6011 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-30 14:13:56.0462 Info Message Template Auto Format enabled
+2023-03-30 14:13:56.0763 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-30 14:13:56.2288 Info Adding target FileTarget(Name=allfile)
+2023-03-30 14:13:56.2830 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-30 14:13:56.3864 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-31 09:30:18.8233 Info Message Template Auto Format enabled
+2023-03-31 09:30:18.8530 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-31 09:30:19.0553 Info Adding target FileTarget(Name=allfile)
+2023-03-31 09:30:19.0840 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-31 09:30:19.1777 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-31 15:36:33.0561 Info Message Template Auto Format enabled
+2023-03-31 15:36:33.1345 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-31 15:36:33.7996 Info Adding target FileTarget(Name=allfile)
+2023-03-31 15:36:33.8524 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-31 15:36:33.9209 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-31 15:40:37.6426 Info Message Template Auto Format enabled
+2023-03-31 15:40:37.7210 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-31 15:40:38.2870 Info Adding target FileTarget(Name=allfile)
+2023-03-31 15:40:38.4143 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-31 15:40:38.6229 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-31 15:44:27.4325 Info Message Template Auto Format enabled
+2023-03-31 15:44:27.4554 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-31 15:44:27.6978 Info Adding target FileTarget(Name=allfile)
+2023-03-31 15:44:27.7235 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-31 15:44:27.8272 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-03-31 16:13:03.1367 Info Shutdown() called. Logger closing...
+2023-03-31 16:13:03.1367 Info Closing old configuration.
+2023-03-31 16:13:03.1580 Info Logger has been closed down.
+2023-03-31 16:13:03.1580 Info AppDomain Shutting down. Logger closing...
+2023-03-31 16:13:03.1580 Info Logger has been shut down.
+2023-03-31 16:13:18.6558 Info Message Template Auto Format enabled
+2023-03-31 16:13:18.6754 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-31 16:13:18.8423 Info Adding target FileTarget(Name=allfile)
+2023-03-31 16:13:18.8602 Info Adding target FileTarget(Name=ownFile-web)
+2023-03-31 16:13:18.9395 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-01 09:41:21.6821 Info Message Template Auto Format enabled
+2023-04-01 09:41:21.7135 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-01 09:41:22.0843 Info Adding target FileTarget(Name=allfile)
+2023-04-01 09:41:22.4118 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-01 09:41:22.5401 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-03 10:26:02.2898 Info Message Template Auto Format enabled
+2023-04-03 10:26:02.3160 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-03 10:26:02.5156 Info Adding target FileTarget(Name=allfile)
+2023-04-03 10:26:02.5951 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-03 10:26:02.7105 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-03 21:01:32.3792 Info Message Template Auto Format enabled
+2023-04-03 21:01:32.4017 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-03 21:01:32.6616 Info Adding target FileTarget(Name=allfile)
+2023-04-03 21:01:33.1266 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-03 21:01:33.2492 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-04 09:52:40.6708 Info Message Template Auto Format enabled
+2023-04-04 09:52:40.6941 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-04 09:52:40.9585 Info Adding target FileTarget(Name=allfile)
+2023-04-04 09:52:41.0540 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-04 09:52:41.1502 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-04 22:14:43.8898 Info Message Template Auto Format enabled
+2023-04-04 22:14:44.0029 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-04 22:14:44.8873 Info Adding target FileTarget(Name=allfile)
+2023-04-04 22:14:45.0157 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-04 22:14:45.1191 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-04 22:18:24.2994 Info Shutdown() called. Logger closing...
+2023-04-04 22:18:24.2994 Info Closing old configuration.
+2023-04-04 22:18:24.3247 Info Logger has been closed down.
+2023-04-04 22:18:24.3247 Info AppDomain Shutting down. Logger closing...
+2023-04-04 22:18:24.3310 Info Logger has been shut down.
+2023-04-04 22:19:03.6777 Info Message Template Auto Format enabled
+2023-04-04 22:19:03.7291 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-04 22:19:03.9772 Info Adding target FileTarget(Name=allfile)
+2023-04-04 22:19:04.1605 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-04 22:19:04.4069 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-04 22:21:12.3365 Info Message Template Auto Format enabled
+2023-04-04 22:21:12.3611 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-04 22:21:13.3963 Info Adding target FileTarget(Name=allfile)
+2023-04-04 22:21:13.5475 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-04 22:21:13.6545 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 09:42:54.8108 Info Message Template Auto Format enabled
+2023-04-05 09:42:54.8659 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 09:42:55.2204 Info Adding target FileTarget(Name=allfile)
+2023-04-05 09:42:55.9701 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 09:42:56.1681 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 09:55:11.6418 Info Shutdown() called. Logger closing...
+2023-04-05 09:55:11.6418 Info Closing old configuration.
+2023-04-05 09:55:11.6840 Info Logger has been closed down.
+2023-04-05 09:55:11.6840 Info AppDomain Shutting down. Logger closing...
+2023-04-05 09:55:11.6923 Info Logger has been shut down.
+2023-04-05 09:55:52.5836 Info Message Template Auto Format enabled
+2023-04-05 09:55:52.5976 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 09:55:52.6692 Info Adding target FileTarget(Name=allfile)
+2023-04-05 09:55:52.6692 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 09:55:52.7257 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 10:20:06.0725 Info Shutdown() called. Logger closing...
+2023-04-05 10:20:06.0725 Info Closing old configuration.
+2023-04-05 10:20:06.0902 Info Logger has been closed down.
+2023-04-05 10:20:06.0902 Info AppDomain Shutting down. Logger closing...
+2023-04-05 10:20:06.0945 Info Logger has been shut down.
+2023-04-05 10:20:22.1057 Info Message Template Auto Format enabled
+2023-04-05 10:20:22.1824 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 10:20:23.4595 Info Adding target FileTarget(Name=allfile)
+2023-04-05 10:20:23.6197 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 10:20:23.7514 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 10:24:01.4693 Info Message Template Auto Format enabled
+2023-04-05 10:24:01.5156 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 10:24:01.8767 Info Adding target FileTarget(Name=allfile)
+2023-04-05 10:24:01.9376 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 10:24:02.0093 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 10:32:47.0035 Info AppDomain Shutting down. Logger closing...
+2023-04-05 10:32:47.0488 Info Logger has been shut down.
+2023-04-05 10:32:59.7710 Info Message Template Auto Format enabled
+2023-04-05 10:32:59.7944 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 10:32:59.9900 Info Adding target FileTarget(Name=allfile)
+2023-04-05 10:33:00.1879 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 10:33:00.3103 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 14:38:52.4646 Info Message Template Auto Format enabled
+2023-04-05 14:38:52.4860 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 14:38:52.6941 Info Adding target FileTarget(Name=allfile)
+2023-04-05 14:38:52.8652 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 14:38:52.9389 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-05 15:37:57.5330 Info Message Template Auto Format enabled
+2023-04-05 15:37:57.5673 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-05 15:37:58.1221 Info Adding target FileTarget(Name=allfile)
+2023-04-05 15:37:58.3107 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-05 15:37:58.3899 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-06 09:45:42.9133 Info Message Template Auto Format enabled
+2023-04-06 09:45:42.9437 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-06 09:45:43.2648 Info Adding target FileTarget(Name=allfile)
+2023-04-06 09:45:43.3144 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-06 09:45:43.5201 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-06 12:33:56.5498 Info Message Template Auto Format enabled
+2023-04-06 12:33:56.5807 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-06 12:33:56.8184 Info Adding target FileTarget(Name=allfile)
+2023-04-06 12:33:56.8625 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-06 12:33:56.9415 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-06 15:36:40.0843 Info Message Template Auto Format enabled
+2023-04-06 15:36:40.1094 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-06 15:36:40.7315 Info Adding target FileTarget(Name=allfile)
+2023-04-06 15:36:40.9895 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-06 15:36:41.0936 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-06 17:56:59.3898 Info Message Template Auto Format enabled
+2023-04-06 17:56:59.4545 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-06 17:56:59.7091 Info Adding target FileTarget(Name=allfile)
+2023-04-06 17:56:59.9876 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-06 17:57:00.0832 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-06 18:04:23.1279 Info AppDomain Shutting down. Logger closing...
+2023-04-06 18:04:23.1766 Info Logger has been shut down.
+2023-04-07 09:36:29.1951 Info Message Template Auto Format enabled
+2023-04-07 09:36:29.2178 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-07 09:36:29.5119 Info Adding target FileTarget(Name=allfile)
+2023-04-07 09:36:29.5615 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-07 09:36:29.6780 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-07 13:55:47.2698 Info Message Template Auto Format enabled
+2023-04-07 13:55:47.2891 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-07 13:55:47.4171 Info Adding target FileTarget(Name=allfile)
+2023-04-07 13:55:47.4342 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-07 13:55:47.4996 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-07 16:52:46.2732 Info Message Template Auto Format enabled
+2023-04-07 16:52:46.3177 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-07 16:52:46.4966 Info Adding target FileTarget(Name=allfile)
+2023-04-07 16:52:46.5846 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-07 16:52:46.6652 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-07 18:01:55.1668 Info Shutdown() called. Logger closing...
+2023-04-07 18:01:55.1668 Info Closing old configuration.
+2023-04-07 18:01:55.1955 Info Logger has been closed down.
+2023-04-07 18:01:55.1955 Info AppDomain Shutting down. Logger closing...
+2023-04-07 18:01:55.1955 Info Logger has been shut down.
+2023-04-10 21:14:30.3263 Info Message Template Auto Format enabled
+2023-04-10 21:14:30.3540 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-10 21:14:30.5493 Info Adding target FileTarget(Name=allfile)
+2023-04-10 21:14:30.5890 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-10 21:14:30.6676 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-10 21:15:03.8228 Info Message Template Auto Format enabled
+2023-04-10 21:15:03.8870 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-10 21:15:05.2896 Info Adding target FileTarget(Name=allfile)
+2023-04-10 21:15:05.9232 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-10 21:15:06.1001 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-10 22:26:52.2931 Info AppDomain Shutting down. Logger closing...
+2023-04-10 22:26:52.3330 Info Logger has been shut down.
+2023-04-11 09:34:42.1349 Info Message Template Auto Format enabled
+2023-04-11 09:34:42.2049 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-11 09:34:42.9548 Info Adding target FileTarget(Name=allfile)
+2023-04-11 09:34:43.1097 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-11 09:34:43.2221 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-11 09:41:38.1973 Info Message Template Auto Format enabled
+2023-04-11 09:41:38.2161 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-11 09:41:38.3691 Info Adding target FileTarget(Name=allfile)
+2023-04-11 09:41:38.3886 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-11 09:41:38.5408 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 09:49:53.4022 Info Message Template Auto Format enabled
+2023-04-12 09:49:53.4465 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 09:49:53.6027 Info Adding target FileTarget(Name=allfile)
+2023-04-12 09:49:53.6737 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 09:49:53.7689 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 15:06:51.7623 Info AppDomain Shutting down. Logger closing...
+2023-04-12 15:06:51.9440 Info Logger has been shut down.
+2023-04-12 15:07:17.7960 Info Message Template Auto Format enabled
+2023-04-12 15:07:17.8193 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 15:07:17.9558 Info Adding target FileTarget(Name=allfile)
+2023-04-12 15:07:17.9746 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 15:07:18.0658 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 18:57:45.9015 Info Message Template Auto Format enabled
+2023-04-12 18:57:45.9222 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 18:57:46.1183 Info Adding target FileTarget(Name=allfile)
+2023-04-12 18:57:46.3130 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 18:57:46.4248 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:10:35.4875 Info Message Template Auto Format enabled
+2023-04-12 19:10:35.5040 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:10:35.6274 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:10:35.8927 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:10:36.0528 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:12:14.3508 Info Message Template Auto Format enabled
+2023-04-12 19:12:14.3777 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:12:14.6310 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:12:14.6712 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:12:14.9621 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:15:28.0196 Info Message Template Auto Format enabled
+2023-04-12 19:15:28.1024 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:15:28.5794 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:15:28.8339 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:15:28.9142 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:21:42.9660 Info Message Template Auto Format enabled
+2023-04-12 19:21:43.0109 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:21:43.1736 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:21:43.1991 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:21:43.3017 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:24:03.4912 Info Message Template Auto Format enabled
+2023-04-12 19:24:03.4912 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:24:03.5967 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:24:03.6005 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:24:03.6605 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:24:11.3838 Info Message Template Auto Format enabled
+2023-04-12 19:24:11.4352 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:24:11.7891 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:24:12.3132 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:24:12.4562 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:30:26.6801 Info Message Template Auto Format enabled
+2023-04-12 19:30:26.6987 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:30:26.8335 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:30:26.8603 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:30:26.9328 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:37:10.8751 Info Message Template Auto Format enabled
+2023-04-12 19:37:10.8948 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:37:11.0279 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:37:11.0608 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:37:11.1330 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:41:07.6499 Info Message Template Auto Format enabled
+2023-04-12 19:41:07.6700 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:41:07.9129 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:41:08.9284 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:41:09.1722 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-12 19:53:59.3731 Info Message Template Auto Format enabled
+2023-04-12 19:53:59.3983 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-12 19:53:59.5550 Info Adding target FileTarget(Name=allfile)
+2023-04-12 19:53:59.6331 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-12 19:53:59.7281 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-13 09:50:57.6679 Info Message Template Auto Format enabled
+2023-04-13 09:50:57.6910 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-13 09:50:58.1084 Info Adding target FileTarget(Name=allfile)
+2023-04-13 09:50:58.3544 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-13 09:50:58.4416 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-13 14:50:01.7226 Info Message Template Auto Format enabled
+2023-04-13 14:50:01.7429 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-13 14:50:01.8689 Info Adding target FileTarget(Name=allfile)
+2023-04-13 14:50:01.8922 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-13 14:50:01.9717 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-13 15:08:49.5229 Info Message Template Auto Format enabled
+2023-04-13 15:08:49.5561 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-13 15:08:49.7310 Info Adding target FileTarget(Name=allfile)
+2023-04-13 15:08:49.7514 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-13 15:08:49.8298 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-13 15:13:24.5356 Info AppDomain Shutting down. Logger closing...
+2023-04-13 15:13:24.5816 Info Logger has been shut down.
+2023-04-14 12:22:51.4605 Info Message Template Auto Format enabled
+2023-04-14 12:22:51.4836 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-14 12:22:51.6161 Info Adding target FileTarget(Name=allfile)
+2023-04-14 12:22:51.6786 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-14 12:22:51.7601 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-14 13:14:30.3159 Info Message Template Auto Format enabled
+2023-04-14 13:14:30.4499 Info Loading assembly: NLog.Web.AspNetCore
+2023-04-14 13:14:31.3496 Info Adding target FileTarget(Name=allfile)
+2023-04-14 13:14:31.5494 Info Adding target FileTarget(Name=ownFile-web)
+2023-04-14 13:14:31.7878 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=46, FilePath=C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Api\bin\Debug\net6.0\nlog.config
+2023-04-14 13:28:10.2014 Info AppDomain Shutting down. Logger closing...
+2023-04-14 13:28:10.2527 Info Logger has been shut down.

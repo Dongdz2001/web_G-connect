@@ -1,0 +1,1330 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>22bde373-9067-4efb-af75-def0d8e34dbf</UserSecretsId>
+  </PropertyGroup>  
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <Compile Remove="ViewModels\**" />
+    <Compile Remove="wwwroot\dist\**" />
+    <Compile Remove="wwwroot\lib\bootstrap\fonts\**" />
+    <Compile Remove="wwwroot\lib\bootstrap\js\**" />
+    <Compile Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <Compile Remove="wwwroot\lib\jquery-validation\**" />
+    <Compile Remove="wwwroot\uploadFiles\27-01-2021\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="ViewModels\**" />
+    <Content Remove="wwwroot\dist\**" />
+    <Content Remove="wwwroot\lib\bootstrap\fonts\**" />
+    <Content Remove="wwwroot\lib\bootstrap\js\**" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <Content Remove="wwwroot\lib\jquery-validation\**" />
+    <Content Remove="wwwroot\uploadFiles\27-01-2021\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <EmbeddedResource Remove="wwwroot\dist\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap\js\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <EmbeddedResource Remove="wwwroot\lib\jquery-validation\**" />
+    <EmbeddedResource Remove="wwwroot\uploadFiles\27-01-2021\**" />
+    <None Remove="Models\**" />
+    <None Remove="ViewModels\**" />
+    <None Remove="wwwroot\dist\**" />
+    <None Remove="wwwroot\lib\bootstrap\fonts\**" />
+    <None Remove="wwwroot\lib\bootstrap\js\**" />
+    <None Remove="wwwroot\lib\jquery-validation-unobtrusive\**" />
+    <None Remove="wwwroot\lib\jquery-validation\**" />
+    <None Remove="wwwroot\uploadFiles\27-01-2021\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Controllers\QLNV\I-04-01Controller.cs" />
+    <Compile Remove="Controllers\QLNV\QLNV_CountTongHopController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\BaoCaoDoanRa.xlsx" />
+    <None Remove="Templates\BaoCaoGoiThau.xlsx" />
+    <None Remove="Templates\BaoCaoGoiThauNew.xlsx" />
+    <None Remove="Templates\BaoCao\7EFB5420" />
+    <None Remove="Templates\BCTK_CoCauKinhPhi.xlsx" />
+    <None Remove="Templates\BC_TinhHinhGiaiNgan.xlsx" />
+    <None Remove="Templates\ThongKeTHNV.xlsx" />
+    <None Remove="Templates\ThongKeTHNV_DTK.xlsx" />
+    <None Remove="Templates\ThongKeTHNV_DXD.xlsx" />
+    <None Remove="Templates\ThongKeTinhHinhNhiemVu.xlsx" />
+    <None Remove="Templates\TienDoSanPham.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\App.Api.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\App.Api.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\App.Api.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\App.Api.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\libman.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\nlog\internal-nlog.txt" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDChamDutHD.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDDieuChinh.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDTCGTT.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDToChuyenGiaDGNT.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDToXacDinhNguyenNhanKhongHoanThanh.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateHDXDNV.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\MailTemplateTTDKP.html" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\Xml\C2_02a_NS.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\Xml\C2_02a_NS_Detail.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\Xml\C2_03_NS.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\Templates\Xml\C2_03_NS_Detail.xml" />
+    <Content Include="bin\Debug\netcoreapp3.1\temp\temp.txt" />
+    <Content Include="Templates\BaoCaoDoanRa.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\BaoCaoGoiThauNew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\BaoCaoGoiThau.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\BCTK_CoCauKinhPhi.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\BC_TinhHinhGiaiNgan.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\ThongKeTHNV_DTK.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\ThongKeTHNV_DXD.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\ThongKeTHNV.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\TienDoSanPham.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Templates\ThongKeTinhHinhNhiemVu.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="bin\Debug\netcoreapp3.1\AngleSharp.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Api.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Api.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Api.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Api.Views.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Api.Views.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Business.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Business.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Common.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Data.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\App.Data.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\AutoMapper.Data.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\AutoMapper.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Castle.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\EFCore.BulkExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\EntityFrameworkCore.SqlServer.HierarchyId.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\EntityFrameworkCore.SqlServer.HierarchyId.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\EPPlus.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ExcelApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Google.Apis.Calendar.v3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Google.Apis.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Google.Apis.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\IdentityModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\identityServer.pfx" />
+    <None Include="bin\Debug\netcoreapp3.1\IdentityServer4.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\IdentityServer4.EntityFramework.Storage.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\IdentityServer4.Storage.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MailKit.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MailMergeLib.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Twitter.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.WsFederation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.DynamicLinq.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.WsFederation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.Saml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Types.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\MimeKit.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Namotion.Reflection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NetOffice.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NetTopologySuite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NetTopologySuite.IO.SqlServerBytes.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NJsonSchema.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog.config" />
+    <None Include="bin\Debug\netcoreapp3.1\NLog.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-09-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-26.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-11-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-02.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-03.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-27.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2021-12-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-19.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-01-26.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-02-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-02.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-03.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-03-31.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-all-2022-04-19.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-09-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-26.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-11-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-02.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-03.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-27.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2021-12-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-19.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-20.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-01-26.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-02-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-02.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-03.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-07.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-09.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-10.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-11.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-16.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-17.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-21.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-22.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-23.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-24.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-25.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-28.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-29.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-30.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-03-31.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-01.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-04.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-05.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-06.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-08.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-12.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-13.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-14.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-15.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-18.log" />
+    <None Include="bin\Debug\netcoreapp3.1\nlog\nlog-own-2022-04-19.log" />
+    <None Include="bin\Debug\netcoreapp3.1\Npgsql.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NSwag.Annotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NSwag.AspNetCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NSwag.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NSwag.Generation.AspNetCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NSwag.Generation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\OfficeApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\OpenXmlPowerTools.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.OAuth.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authorization.Policy.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Authorization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Forms.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Server.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Components.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HostFiltering.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Html.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Connections.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Http.Features.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpOverrides.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.HttpsPolicy.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Identity.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Localization.Routing.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Metadata.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Cors.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Localization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.Razor.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Razor.Runtime.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCaching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.ResponseCompression.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Rewrite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Routing.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.HttpSys.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IIS.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.IISIntegration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Session.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.StaticFiles.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebSockets.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.WebUtilities.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.CSharp.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.CommandLine.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Ini.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.UserSecrets.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Console.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Debug.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventLog.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.EventSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.TraceSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Options.DataAnnotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.WebEncoders.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.JSInterop.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Net.Http.Headers.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.VisualBasic.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\Microsoft.Win32.Registry.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\mscorlib.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\netstandard.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.AppContext.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Buffers.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Collections.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.DataAnnotations.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.EventBasedAsync.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ComponentModel.TypeConverter.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Console.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Data.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Data.DataSetExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Data.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.StackTrace.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TextWriterTraceListener.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tools.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.TraceSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Tracing.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Drawing.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Drawing.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Dynamic.Runtime.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Globalization.Calendars.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Globalization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Globalization.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Compression.Brotli.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Compression.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Compression.FileSystem.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Compression.ZipFile.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.DriveInfo.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.FileSystem.Watcher.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.IsolatedStorage.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.MemoryMappedFiles.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Pipelines.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.Pipes.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.IO.UnmanagedMemoryStream.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Linq.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Linq.Expressions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Linq.Parallel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Linq.Queryable.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Memory.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Http.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.HttpListener.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Mail.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.NameResolution.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.NetworkInformation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Ping.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Requests.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Security.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.ServicePoint.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.Sockets.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.WebClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.WebHeaderCollection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.WebProxy.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.Client.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Net.WebSockets.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Numerics.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Numerics.Vectors.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ObjectModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.DispatchProxy.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.ILGeneration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Emit.Lightweight.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Metadata.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Reflection.TypeExtensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Handles.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.InteropServices.WindowsRuntime.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Intrinsics.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Loader.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Numerics.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Formatters.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Runtime.Serialization.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.AccessControl.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Claims.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Algorithms.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Cng.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Csp.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Encoding.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.X509Certificates.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Cryptography.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Permissions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Principal.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.Principal.Windows.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Text.RegularExpressions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Channels.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Overlapped.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Dataflow.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Tasks.Parallel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Thread.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.ThreadPool.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Threading.Timer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Transactions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Transactions.Local.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.ValueTuple.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Web.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Web.HttpUtility.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Windows.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.Linq.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.ReaderWriter.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.Serialization.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.XDocument.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.XmlDocument.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.XmlSerializer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\refs\WindowsBase.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SmartFormat.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Composition.Convention.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.IO.Packaging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Text.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\A2BaoCaoTienDoNoiDungThucHien.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\A3BaoCaoTinhHinhSuDungKinhPhi.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BangKeHoSoTaiChinh.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCaoDMTS.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCaoDoanRa.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCaoGoiThau.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoChiTietCongNo.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoCoCauKinhPhi.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoDMTS.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoKinhPhiChuaQuyetToan.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoKinhPhiGiam.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoThongKeTinhHinhKinhPhi.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoTinhHinhGiaiNgan.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoTinhHinhThucHienGiaiNgan.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoTongHopCongNo.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoTuyBien.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoUC34_SPKHCN.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoUC34_TBMM.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoUC61.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoUC63.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BaoCao\BaoCaoUc67.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BCTK_CoCauKinhPhi.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BC_TinhHinhGiaiNgan.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\bienbanhop.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\bienbanhophdxdnv.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\bieumauKHLCNT.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.M07.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.01.TT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.02.TT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.03.TT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.04.TT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.05.TT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.07.QT-A.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.07.QT-B.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.08.QT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\BM.TCNV.09.QT.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\C2-02a-NS.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\C2-03-NS.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\danhsachhanghoatrungthau.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\DanhSachRaSoatNhiemVu.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\danhsachthanhvien.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\DanhSachThongTinNhiemVu.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\demo.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\dutoanexport.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\dutoanexportexcel.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\dutoantemplate.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\dutoantemplatenew.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\filedutoanmau.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\filedutoanmauCopy.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\giaymoixdnv.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\hoidonggtt.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\hoidongxdnv.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\hopdong.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\hopdong.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\KeHoachCongTac.xlsm" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\kehoachkinhphi.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\KeHoachNam.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\KinhPhiThuHoi.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\NhatKy.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\nhiemvutemplate.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\NoteCapNhatTrangThaiBuocNhiemVu.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\phieunhanxet.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\phieutrinhpdkhclnt.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\phieutrinhpheduyetnv.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\quyetdinhpheduyetdm.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\quyetdinhpheduyetkhlcnt.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\quyetdinhtcgtt-tdkp.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\quyetdinhttdkhlcnt.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\quyetdinhxdnv.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\template.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\thanhtoancapkinhphi.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\thanhtoancapkinhphi_caplandau.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\thanhtoantamung.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\ThongKeNVDXD.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\ThongKeTHNV.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\TienDoSanPham.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\totrinhdenghipheduyetkhlcnt.template.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\XacNhanKhoiLuongCongViec.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\Templates\XacNhanSoDuTamUng.xlsx" />
+    <None Include="bin\Debug\netcoreapp3.1\temp\51d9c06e-52e0-4212-8c32-3e30f3462042.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\temp\62c3afae-0e8a-4201-b7a6-d7efb98727d2.docx" />
+    <None Include="bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\VBIDEApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\WordApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\YAXLib.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll" />
+    <None Include="Views\Account\AccessDenied.cshtml" />
+    <None Include="Views\Account\LoggedOut.cshtml" />
+    <None Include="Views\Account\Login.cshtml" />
+    <None Include="Views\Account\Logout.cshtml" />
+    <None Include="Views\Consent\Index.cshtml" />
+    <None Include="Views\Device\Success.cshtml" />
+    <None Include="Views\Device\UserCodeCapture.cshtml" />
+    <None Include="Views\Device\UserCodeConfirmation.cshtml" />
+    <None Include="Views\Diagnostics\Index.cshtml" />
+    <None Include="Views\Grants\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\Redirect.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ScopeListItem.cshtml" />
+    <None Include="Views\Shared\_ValidationSummary.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\js\signin-redirect.js" />
+    <None Include="wwwroot\js\signout-redirect.js" />
+    <None Include="wwwroot\lib\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\iconify\iconify.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\lib\jquery\jquery.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.12.1" />
+    <PackageReference Include="IdentityServer4" Version="4.1.1" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.WsFederation" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0-preview.5.21321.1" />
+    <PackageReference Include="NetOfficeFw.Core" Version="1.8.1" />
+    <PackageReference Include="NetOfficeFw.Excel" Version="1.8.1" />
+    <PackageReference Include="NetOfficeFw.Word" Version="1.8.1" />
+    <PackageReference Include="NLog" Version="4.7.7" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.10.0" />    
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />    
+    <PackageReference Include="NSwag.AspNetCore" Version="13.14.5" />    
+    <PackageReference Include="System.Runtime.Caching" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Business\App.Business.csproj" />
+    <ProjectReference Include="..\App.Common\App.Common.csproj" />
+    <ProjectReference Include="..\App.Data\App.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\" />
+    <Folder Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\" />
+    <Folder Include="Controllers\UploadFile\" />
+    <Folder Include="wwwroot\uploadFiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="identityServer.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\A2BaoCaoTienDoNoiDungThucHien.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\A3BaoCaoTinhHinhSuDungKinhPhi.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BangKeHoSoTaiChinh.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BangKeTongHopNVL.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BangKeTongHopTBMM.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCaoDMTS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoKinhPhiChuaQuyetToanNew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoTuyBien.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoUc67ChiTiet.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoUc67TongHop.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoUC71.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\~%24BaoCaoTuyBien.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.02.TT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.01.TT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.07.QT-A.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.05.TT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCaoTinhHinhGiaiNgan.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoChiTietCongNo.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoCoCauKinhPhi.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BaoCao\BaoCaoKinhPhiChuaQuyetToan.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoKinhPhiGiam.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BM.TCNV.07.QT-B.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoThongKeTinhHinhKinhPhi.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoTinhHinhGiaiNgan.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoTinhHinhThucHienGiaiNgan.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoTongHopCongNo.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoUC34_TBMM.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoUC61.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoUC63.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoUC34_SPKHCN.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\BaoCao\BaoCaoUc67.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
+    <None Update="Templates\bienbanhop.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\bienbanhophdxdnv.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.M07.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\bieumauKHLCNT.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.04.TT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.03.TT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\C2-03-NS-goc.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\danhsachhanghoatrungthau.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\DanhSachRaSoatNhiemVu.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\danhsachthanhvien.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\DanhSachThongTinNhiemVu.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\dutoanexport.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\dutoanexportexcel.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\dutoanexportnew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\dutoantemplate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\dutoantemplatenew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\filedutoanmau.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\filedutoanmauCopy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\filedutoanmaunew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\filesanphammau.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\giaymoixdnv.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\C2-02a-NS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\hoidonggtt.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\hoidongxdnv.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\hopdong.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\hopdong.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\demo.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\KeHoachCongTac.xlsm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\kehoachkinhphi.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\KeHoachNam.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\KinhPhiThuHoi.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDChamDutHD.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDDieuChinh.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDTCGTT.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDToChuyenGiaDGNT.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDToXacDinhNguyenNhanKhongHoanThanh.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateHDXDNV.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\MailTemplateTTDKP.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\NhatKy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\NhatKyNhiemVu.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\nhiemvutemplate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\phieunhanxet.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\phieutrinhpdkhclnt.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\phieutrinhpheduyetnv.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinh.tempalte.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinh.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinhpheduyetdm.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinhpheduyetkhlcnt.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinhtcgtt-tdkp.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinhttdkhlcnt.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\quyetdinhxdnv.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.08.QT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BM.TCNV.09.QT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\sanphamexport.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\template.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\thanhtoancapkinhphi.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\thanhtoancapkinhphi_caplandau.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\thanhtoantamung.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\C2-03-NS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\ThongKeNVDXD.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\totrinhdenghipheduyetkhlcnt.template.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\XacNhanKhoiLuongCongViec.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\NoteCapNhatTrangThaiBuocNhiemVu.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\XacNhanSoDuTamUng.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Xml\C2_02a_NS_Detail.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Xml\C2_02a_NS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Xml\C2_03_NS_Detail.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\Xml\C2_03_NS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="temp\temp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

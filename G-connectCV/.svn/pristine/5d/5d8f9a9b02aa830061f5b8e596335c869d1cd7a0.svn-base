@@ -1,0 +1,32 @@
+export default function CLIENT_LICH_TUANForm(props) {
+  const linkList = "/client/CL_LICH_TUAN";
+  let { id } = useParams();
+  let itemId = props.id ?? id;
+  const onSubmit = async (formData) => {
+    if (itemId === "new") {
+      //console.log(formData);
+      await itemService.create(formData);
+    } else {
+      await itemService.update(itemId, formData);
+    }
+    if (props.fnLoadData) props.fnLoadData();
+    if (props.fnClose) props.fnClose();
+    else navigate(linkList);
+  };
+  const close = async () => {
+    if (props.fnClose) props.fnClose();
+    else navigate(linkList);
+    //navigate(-1);
+  };
+  return (
+    <div>
+      <Card
+        title={
+          (itemId === "new" ? "Thêm" : "Sửa") + " Lịch tuần, lịch thực tập"
+        }
+      >
+        <form className="p-fluid" onSubmit={handleSubmit(onSubmit)}></form>
+      </Card>
+    </div>
+  );
+}

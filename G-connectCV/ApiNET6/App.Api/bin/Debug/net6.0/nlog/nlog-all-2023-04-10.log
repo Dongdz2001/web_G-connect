@@ -1,0 +1,911 @@
+2023-04-10 21:14:30.7559||DEBUG|App.Api.Program|init main 
+2023-04-10 21:14:43.2456|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 21:14:43.8467|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'PersistedGrantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:14:44.9572|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.0532|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.0664|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.0664|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.1014|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:14:45.1384|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:14:45.3241|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ConfigurationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:14:45.3327|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.3327|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.3327|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.3529|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.3637|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:14:45.3637|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:14:45.3637|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.3803|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.3803|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:14:45.3803|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:14:45.4212|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:14:45.4212|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:14:46.0436|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Clients] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:14:46.0918|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [IdentityResources] AS [i]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:14:46.1107|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ApiResources] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:14:46.1511|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [qtht_nguoi_dung] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:14:46.2439|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ConfigurationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:14:46.3590|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Origin]
+FROM [ClientCorsOrigins] AS [c] 
+2023-04-10 21:14:46.3728||INFO|IdentityServer4.Startup|Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f 
+2023-04-10 21:14:46.4444||INFO|IdentityServer4.Startup|Using the default authentication scheme oidc for IdentityServer 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for authentication 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-in 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-out 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for challenge 
+2023-04-10 21:14:46.4567||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for forbid 
+2023-04-10 21:14:47.8584|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Duong Minh Dong\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-04-10 21:14:50.2352|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/ - - 
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Login Url: /Account/Login 
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Login Return Url Parameter: ReturnUrl 
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Logout Url: /Account/Logout 
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|ConsentUrl Url: /consent 
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Consent Return Url Parameter: returnUrl 
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Error Url: /home/error 
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Error Id Parameter: errorId 
+2023-04-10 21:14:50.9870|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IdentityServerHost.Quickstart.UI.HomeController.Index (App.Api)' 
+2023-04-10 21:14:51.0127|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IdentityServerHost.Quickstart.UI.HomeController (App.Api). 
+2023-04-10 21:15:06.8824||DEBUG|App.Api.Program|init main 
+2023-04-10 21:15:14.6744|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 21:15:15.2067|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'PersistedGrantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:15:16.0418|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.1335|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.1508|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.1615|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.2120|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:15:16.2558|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:15:16.4828|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ConfigurationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:15:16.4996|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.5307|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.5376|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.5376|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.5581|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:15:16.5581|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:15:16.5679|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.5679|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.5870|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2023-04-10 21:15:16.5870|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2023-04-10 21:15:16.6252|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2023-04-10 21:15:16.6252|20405|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date. 
+2023-04-10 21:15:17.3571|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Clients] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:15:17.3791|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [IdentityResources] AS [i]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:15:17.3791|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ApiResources] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:15:17.4183|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [qtht_nguoi_dung] AS [q]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2023-04-10 21:15:17.4842|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'ConfigurationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 21:15:17.5531|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Origin]
+FROM [ClientCorsOrigins] AS [c] 
+2023-04-10 21:15:17.5531||INFO|IdentityServer4.Startup|Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f 
+2023-04-10 21:15:17.6073||INFO|IdentityServer4.Startup|Using the default authentication scheme oidc for IdentityServer 
+2023-04-10 21:15:17.6073||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for authentication 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-in 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-out 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for challenge 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for forbid 
+2023-04-10 21:15:18.4381|63|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Duong Minh Dong\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-04-10 21:15:20.4432|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/ - - 
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Login Url: /Account/Login 
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Login Return Url Parameter: ReturnUrl 
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Logout Url: /Account/Logout 
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|ConsentUrl Url: /consent 
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Consent Return Url Parameter: returnUrl 
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Error Url: /home/error 
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Error Id Parameter: errorId 
+2023-04-10 21:15:20.9460|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'IdentityServerHost.Quickstart.UI.HomeController.Index (App.Api)' 
+2023-04-10 21:15:20.9627|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller IdentityServerHost.Quickstart.UI.HomeController (App.Api). 
+2023-04-10 21:15:21.0298|1|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executing ViewResult, running view Index. 
+2023-04-10 21:15:21.2357|4|INFO|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor|Executed ViewResult - view Index executed in 215.6511ms. 
+2023-04-10 21:15:21.2426|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action IdentityServerHost.Quickstart.UI.HomeController.Index (App.Api) in 278.1362ms 
+2023-04-10 21:15:21.2426|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'IdentityServerHost.Quickstart.UI.HomeController.Index (App.Api)' 
+2023-04-10 21:15:21.2842|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 847.4158ms 
+2023-04-10 21:15:21.3312|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - 
+2023-04-10 21:15:21.3322|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/css/site.css - - 
+2023-04-10 21:15:21.3322|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/lib/iconify/iconify.min.js - - 
+2023-04-10 21:15:21.4162|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/css/adminlte.min.css - - 
+2023-04-10 21:15:21.4162|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.slim.min.js - - 
+2023-04-10 21:15:21.4162|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 87.4440ms 
+2023-04-10 21:15:21.4162|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - 
+2023-04-10 21:15:21.4162|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified 
+2023-04-10 21:15:21.4162|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /lib/jquery/dist/jquery.slim.min.js was not modified 
+2023-04-10 21:15:21.4162|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /lib/iconify/iconify.min.js was not modified 
+2023-04-10 21:15:21.4162|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /css/site.css was not modified 
+2023-04-10 21:15:21.4256|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 304 - text/css 94.2387ms 
+2023-04-10 21:15:21.4162|6|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The file /css/adminlte.min.css was not modified 
+2023-04-10 21:15:21.4162|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 4.3199ms 
+2023-04-10 21:15:21.4256|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.slim.min.js - - - 304 - application/javascript 7.3828ms 
+2023-04-10 21:15:21.4256|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/lib/iconify/iconify.min.js - - - 304 - application/javascript 88.8787ms 
+2023-04-10 21:15:21.4256|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/css/adminlte.min.css - - - 304 - text/css 13.8466ms 
+2023-04-10 22:01:31.3168|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:31.3168|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:31.3605|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:31.3605|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:31.3661|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 204 - - 49.3426ms 
+2023-04-10 22:01:31.3661|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 204 - - 49.3427ms 
+2023-04-10 22:01:31.4231|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:31.4788|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:31.4909||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:31.4909|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:31.5111|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:31.5653|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:31.6607|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:33.5486|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:34.1014|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (142ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:34.6353|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:34.8255|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:34.8460|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:34.8596|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:34.8683|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:34.8683|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:34.8683||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:34.8683|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 3310.6001ms 
+2023-04-10 22:01:34.8683|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:34.8816|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:34.8816|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:34.8816|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:34.9033|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:34.9131|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 3490.0813ms 
+2023-04-10 22:01:34.9531|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:34.9801|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:34.9801|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:34.9965|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:35.0080|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:35.0197|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:35.0197|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 134.7108ms 
+2023-04-10 22:01:35.0197|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:35.0197|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 154.6748ms 
+2023-04-10 22:01:40.4959|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:40.4959|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.4959|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - 
+2023-04-10 22:01:40.5029|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - - 204 - - 6.9242ms 
+2023-04-10 22:01:40.5029|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5029|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - - 204 - - 7.1551ms 
+2023-04-10 22:01:40.5029|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_CHUC_NANG/select - - 
+2023-04-10 22:01:40.5029|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5029|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_CHUC_NANG/select - - - 204 - - 8.8116ms 
+2023-04-10 22:01:40.5029|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.5295|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5295|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 204 - - 16.6873ms 
+2023-04-10 22:01:40.5295|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_CHUC_NANG/select - - 
+2023-04-10 22:01:40.5295|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.5484|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5484|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 204 - - 19.6460ms 
+2023-04-10 22:01:40.5545|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5545|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.5545|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5545||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.5484|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.5484|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - 
+2023-04-10 22:01:40.6013|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.5545||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CHUC_NANG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.5963|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:40.6013|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.6013||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_VAN_DE_CAN_GIAI_QUYET/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.5545|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.6013|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.6013|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 204 - - 57.4080ms 
+2023-04-10 22:01:40.6013|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.6148||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CONG_VIEC_PHAN_CONG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.6148|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:40.6148|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.6148|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.6148|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api)' 
+2023-04-10 22:01:40.6148|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.6148|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.6339|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_VAN_DE_CAN_GIAI_QUYET"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController (App.Api). 
+2023-04-10 22:01:40.6339|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.6499|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "GC_CHUC_NANG"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_CHUC_NANGController (App.Api). 
+2023-04-10 22:01:40.6630|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.6630|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.6630|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.6803|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "GC_CONG_VIEC_PHAN_CONG"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController (App.Api). 
+2023-04-10 22:01:40.6803|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.7530|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:40.7715|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:40.7715|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:40.7715|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 158.2393ms 
+2023-04-10 22:01:40.7715|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.7715|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 225.7123ms 
+2023-04-10 22:01:40.7715|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.7872|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.7872||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.7872|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.7872|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.7872|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:40.7872|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.8026|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_CHUC_NANG] AS [g] 
+2023-04-10 22:01:40.8243|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [g].[ten_chuc_nang] AS [label], [g].[id] AS [value]
+FROM [GC_CHUC_NANG] AS [g]
+ORDER BY [g].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:40.8243|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.DBAll.GC_CHUC_NANGSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:40.8347|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api) in 180.5515ms 
+2023-04-10 22:01:40.8347|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.8347|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_CHUC_NANG/select - - - 200 - application/json;+charset=utf-8 307.6269ms 
+2023-04-10 22:01:40.8468|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_VAN_DE_CAN_GIAI_QUYET] AS [g] 
+2023-04-10 22:01:40.8788|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:40.8975|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:40.8975|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:40.8975|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 105.9065ms 
+2023-04-10 22:01:40.8975|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.8975|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 121.5145ms 
+2023-04-10 22:01:40.8975|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:40.9097|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_CONG_VIEC_PHAN_CONG] AS [g] 
+2023-04-10 22:01:40.9097|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:40.9097||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:40.9288|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:40.9288|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.9288|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:40.9288|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [g].[ten_cong_viec] AS [label], [g].[id] AS [value]
+FROM [GC_CONG_VIEC_PHAN_CONG] AS [g]
+ORDER BY [g].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:40.9415|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:40.9415|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.DBAll.GC_CONG_VIEC_PHAN_CONGSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:40.9415|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api) in 265.7919ms 
+2023-04-10 22:01:40.9415|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api)' 
+2023-04-10 22:01:40.9415|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - - 200 - application/json;+charset=utf-8 399.6368ms 
+2023-04-10 22:01:40.9899|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[da_giai_quyet], [t].[huong_giai_quyet], [t].[id], [t].[id_chuc_nang], [t].[id_cong_viec], [t].[id_nguoi_gap], [t].[id_nguoi_giai_quyet], [t].[id_nguoi_phoi_hop], [t].[ten_van_de], [t].[ngay_chinh_sua], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [t].[noi_dung], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [q2].[id], [q2].[anh_dai_dien_url], [q2].[chuc_vu_id], [q2].[email], [q2].[file_dinh_kem_id], [q2].[is_dau_moi], [q2].[mat_khau], [q2].[ngay_chinh_sua], [q2].[ngay_tao], [q2].[nguoi_chinh_sua_id], [q2].[nguoi_tao_id], [q2].[salt_code], [q2].[so_dien_thoai], [q2].[super_admin], [q2].[tai_khoan], [q2].[ten], [q2].[trang_thai], [q3].[id], [q3].[anh_dai_dien_url], [q3].[chuc_vu_id], [q3].[email], [q3].[file_dinh_kem_id], [q3].[is_dau_moi], [q3].[mat_khau], [q3].[ngay_chinh_sua], [q3].[ngay_tao], [q3].[nguoi_chinh_sua_id], [q3].[nguoi_tao_id], [q3].[salt_code], [q3].[so_dien_thoai], [q3].[super_admin], [q3].[tai_khoan], [q3].[ten], [q3].[trang_thai], [g0].[ten_chuc_nang], [g1].[ten_cong_viec]
+FROM (
+    SELECT [g].[id], [g].[da_giai_quyet], [g].[huong_giai_quyet], [g].[id_chuc_nang], [g].[id_cong_viec], [g].[id_nguoi_gap], [g].[id_nguoi_giai_quyet], [g].[id_nguoi_phoi_hop], [g].[ngay_chinh_sua], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[noi_dung], [g].[ten_van_de]
+    FROM [GC_VAN_DE_CAN_GIAI_QUYET] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_gap] = [q1].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q2] ON [t].[id_nguoi_giai_quyet] = [q2].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q3] ON [t].[id_nguoi_phoi_hop] = [q3].[id]
+LEFT JOIN [GC_CHUC_NANG] AS [g0] ON [t].[id_chuc_nang] = [g0].[id]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g1] ON [t].[id_cong_viec] = [g1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:40.9899|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:41.0037|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:41.0037|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:41.0037|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 68.6425ms 
+2023-04-10 22:01:41.0037|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:41.0037|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 103.1806ms 
+2023-04-10 22:01:41.0201|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_VAN_DE_CAN_GIAI_QUYETDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:41.0429|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.0563|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.0674|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.0674|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.0879|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1019|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.1203|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1304|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1304|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.1522|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1603|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1603|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.1803|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:41.1803|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1963|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:41.1963|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api) in 562.9ms 
+2023-04-10 22:01:41.1963|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api)' 
+2023-04-10 22:01:41.1963|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 604.6547ms 
+2023-04-10 22:01:45.2583|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:45.2583|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_CHUC_NANG/select - - 
+2023-04-10 22:01:45.2583|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.2583||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CHUC_NANG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.2583|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.2583||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_VAN_DE_CAN_GIAI_QUYET/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.2583|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - 
+2023-04-10 22:01:45.2583|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.2583|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.2687||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CONG_VIEC_PHAN_CONG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.2687|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.2687|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api)' 
+2023-04-10 22:01:45.2687|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_VAN_DE_CAN_GIAI_QUYET"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController (App.Api). 
+2023-04-10 22:01:45.2687|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:45.2687|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.2687||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.2687|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.2687|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "GC_CONG_VIEC_PHAN_CONG"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController (App.Api). 
+2023-04-10 22:01:45.2583|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.2687|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.2687|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.2687|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.2687|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.2856|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "GC_CHUC_NANG"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_CHUC_NANGController (App.Api). 
+2023-04-10 22:01:45.2856|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.2687|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.2856|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:45.2856|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.4188|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_VAN_DE_CAN_GIAI_QUYET] AS [g] 
+2023-04-10 22:01:45.4363|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:45.4700|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_CONG_VIEC_PHAN_CONG] AS [g] 
+2023-04-10 22:01:45.4825|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (62ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[da_giai_quyet], [t].[huong_giai_quyet], [t].[id], [t].[id_chuc_nang], [t].[id_cong_viec], [t].[id_nguoi_gap], [t].[id_nguoi_giai_quyet], [t].[id_nguoi_phoi_hop], [t].[ten_van_de], [t].[ngay_chinh_sua], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [t].[noi_dung], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [q2].[id], [q2].[anh_dai_dien_url], [q2].[chuc_vu_id], [q2].[email], [q2].[file_dinh_kem_id], [q2].[is_dau_moi], [q2].[mat_khau], [q2].[ngay_chinh_sua], [q2].[ngay_tao], [q2].[nguoi_chinh_sua_id], [q2].[nguoi_tao_id], [q2].[salt_code], [q2].[so_dien_thoai], [q2].[super_admin], [q2].[tai_khoan], [q2].[ten], [q2].[trang_thai], [q3].[id], [q3].[anh_dai_dien_url], [q3].[chuc_vu_id], [q3].[email], [q3].[file_dinh_kem_id], [q3].[is_dau_moi], [q3].[mat_khau], [q3].[ngay_chinh_sua], [q3].[ngay_tao], [q3].[nguoi_chinh_sua_id], [q3].[nguoi_tao_id], [q3].[salt_code], [q3].[so_dien_thoai], [q3].[super_admin], [q3].[tai_khoan], [q3].[ten], [q3].[trang_thai], [g0].[ten_chuc_nang], [g1].[ten_cong_viec]
+FROM (
+    SELECT [g].[id], [g].[da_giai_quyet], [g].[huong_giai_quyet], [g].[id_chuc_nang], [g].[id_cong_viec], [g].[id_nguoi_gap], [g].[id_nguoi_giai_quyet], [g].[id_nguoi_phoi_hop], [g].[ngay_chinh_sua], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[noi_dung], [g].[ten_van_de]
+    FROM [GC_VAN_DE_CAN_GIAI_QUYET] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_gap] = [q1].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q2] ON [t].[id_nguoi_giai_quyet] = [q2].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q3] ON [t].[id_nguoi_phoi_hop] = [q3].[id]
+LEFT JOIN [GC_CHUC_NANG] AS [g0] ON [t].[id_chuc_nang] = [g0].[id]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g1] ON [t].[id_cong_viec] = [g1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:45.4825|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [g].[ten_cong_viec] AS [label], [g].[id] AS [value]
+FROM [GC_CONG_VIEC_PHAN_CONG] AS [g]
+ORDER BY [g].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:45.4825|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_VAN_DE_CAN_GIAI_QUYETDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.4825|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.DBAll.GC_CONG_VIEC_PHAN_CONGSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.4888|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api) in 207.628ms 
+2023-04-10 22:01:45.4888|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_CONG_VIEC_PHAN_CONGController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.4888|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_CONG_VIEC_PHAN_CONG/select - - - 200 - application/json;+charset=utf-8 230.4403ms 
+2023-04-10 22:01:45.4888|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_CHUC_NANG] AS [g] 
+2023-04-10 22:01:45.4888|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.5062|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [g].[ten_chuc_nang] AS [label], [g].[id] AS [value]
+FROM [GC_CHUC_NANG] AS [g]
+ORDER BY [g].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:45.5062|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.DBAll.GC_CHUC_NANGSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.5062|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api) in 224.3556ms 
+2023-04-10 22:01:45.5062|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_CHUC_NANGController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.5062|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_CHUC_NANG/select - - - 200 - application/json;+charset=utf-8 252.0464ms 
+2023-04-10 22:01:45.5270|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.5439|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.5658|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.5663|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:45.5663|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.5663|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 275.5269ms 
+2023-04-10 22:01:45.5663|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.5663|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 301.6956ms 
+2023-04-10 22:01:45.5663|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:45.5663|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.5663|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.5813||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.5813|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.5813|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.5813|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:45.5813|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.5813|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.6027|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.6140|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.6140|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.6140|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:45.6322|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.6322|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:45.6322|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.6322|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 49.2571ms 
+2023-04-10 22:01:45.6322|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.6322|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 67.4718ms 
+2023-04-10 22:01:45.6322|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.6448|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - 
+2023-04-10 22:01:45.6448|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:45.6448||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:45.6448|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:45.6448|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.6448|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetSelect", controller = "qtht_nguoi_dung"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetSelect(System.String, System.String, System.String) on controller App.Api.Controllers.QTHT2.qtht_nguoi_dungController (App.Api). 
+2023-04-10 22:01:45.6448|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:45.6626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.6626|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.6871|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:45.6983|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.7103|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [qtht_nguoi_dung] AS [q] 
+2023-04-10 22:01:45.7103|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:45.7103|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api) in 441.0259ms 
+2023-04-10 22:01:45.7103|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_VAN_DE_CAN_GIAI_QUYETController.Get (App.Api)' 
+2023-04-10 22:01:45.7103|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_VAN_DE_CAN_GIAI_QUYET/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 458.5459ms 
+2023-04-10 22:01:45.7220|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[ten] AS [label], [q].[id] AS [value]
+FROM [qtht_nguoi_dung] AS [q]
+ORDER BY [q].[id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY 
+2023-04-10 22:01:45.7220|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[App.Business.Services.QTHT2.qtht_nguoi_dungSelectDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:45.7220|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api) in 76.8644ms 
+2023-04-10 22:01:45.7220|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.QTHT2.qtht_nguoi_dungController.GetSelect (App.Api)' 
+2023-04-10 22:01:45.7220|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-qtht_nguoi_dung/select - - - 200 - application/json;+charset=utf-8 88.9754ms 
+2023-04-10 22:01:46.5903|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:46.5903|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:46.5903|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 204 - - 5.4857ms 
+2023-04-10 22:01:46.5903|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:46.6001|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:46.6001|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 204 - - 5.0626ms 
+2023-04-10 22:01:46.6001|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:46.6001|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:46.6001||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:46.6001|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:46.6133|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:46.6133|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:46.6133|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:46.6635|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:46.6774|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:46.6774|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:46.6774|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:46.7015|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:46.7107|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:46.7107|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 95.9233ms 
+2023-04-10 22:01:46.7107|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:46.7107|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 107.8100ms 
+2023-04-10 22:01:46.7107|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:46.7107|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:46.7107||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:46.7107|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:46.7230|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:46.7230|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:46.7230|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:46.7732|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:46.7879|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:46.7879|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:46.8011|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:46.8011|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:46.8202|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:46.8202|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 96.6288ms 
+2023-04-10 22:01:46.8202|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:46.8202|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 105.9573ms 
+2023-04-10 22:01:49.2316|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:49.2316|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:49.2388||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:49.2388|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:49.2388|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:49.2388|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:49.2388|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:49.2953|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:49.3075|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:49.3075|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:49.3214|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:49.3395|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:49.3493|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:49.3493|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 106.7964ms 
+2023-04-10 22:01:49.3493|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:49.3493|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 120.6885ms 
+2023-04-10 22:01:49.3493|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - 
+2023-04-10 22:01:49.3493|4|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-04-10 22:01:49.3493||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint 
+2023-04-10 22:01:49.3493|10|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware|No CORS policy found for the specified request. 
+2023-04-10 22:01:49.3642|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:49.3642|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "GC_LICH_HANG_NGAY"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Get(Int32, Int32, System.String, System.String, System.String) on controller App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController (App.Api). 
+2023-04-10 22:01:49.3642|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'APPContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data using lazy-loading proxies  
+2023-04-10 22:01:49.4305|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [GC_LICH_HANG_NGAY] AS [g] 
+2023-04-10 22:01:49.4460|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[id], [t].[id_cong_viec], [t].[id_nguoi_thuc_hien], [g0].[ten_cong_viec], [t].[ngay_checkin], [t].[ngay_checkout], [t].[ngay_chinh_sua], [t].[ngay_lam_viec], [t].[ngay_tao], CASE
+    WHEN [q].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q].[id], [q].[tai_khoan], [q].[ten], [t].[nguoi_chinh_sua_id], CASE
+    WHEN [q0].[id] IS NULL THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END, [q0].[id], [q0].[tai_khoan], [q0].[ten], [t].[nguoi_tao_id], [q1].[id], [q1].[anh_dai_dien_url], [q1].[chuc_vu_id], [q1].[email], [q1].[file_dinh_kem_id], [q1].[is_dau_moi], [q1].[mat_khau], [q1].[ngay_chinh_sua], [q1].[ngay_tao], [q1].[nguoi_chinh_sua_id], [q1].[nguoi_tao_id], [q1].[salt_code], [q1].[so_dien_thoai], [q1].[super_admin], [q1].[tai_khoan], [q1].[ten], [q1].[trang_thai], [t].[so_gio]
+FROM (
+    SELECT [g].[id], [g].[id_cong_viec], [g].[id_nguoi_thuc_hien], [g].[ngay_checkin], [g].[ngay_checkout], [g].[ngay_chinh_sua], [g].[ngay_lam_viec], [g].[ngay_tao], [g].[nguoi_chinh_sua_id], [g].[nguoi_tao_id], [g].[so_gio]
+    FROM [GC_LICH_HANG_NGAY] AS [g]
+    ORDER BY [g].[id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [GC_CONG_VIEC_PHAN_CONG] AS [g0] ON [t].[id_cong_viec] = [g0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q] ON [t].[nguoi_chinh_sua_id] = [q].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q0] ON [t].[nguoi_tao_id] = [q0].[id]
+LEFT JOIN [qtht_nguoi_dung] AS [q1] ON [t].[id_nguoi_thuc_hien] = [q1].[id]
+ORDER BY [t].[id] 
+2023-04-10 22:01:49.4460|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'App.Common.Base.ResponseList`1[[App.Business.Services.DBAll.GC_LICH_HANG_NGAYDTO, App.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-04-10 22:01:49.4571|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[nguoi_dung_id], [q].[nhom_nguoi_dung_id]
+FROM [qtht_nguoi_dung_2_nhom_nguoi_dung] AS [q]
+WHERE [q].[nguoi_dung_id] = @__get_Item_0 
+2023-04-10 22:01:49.4571|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:49.4782|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [q].[id], [q].[anh_dai_dien_url], [q].[chuc_vu_id], [q].[email], [q].[file_dinh_kem_id], [q].[is_dau_moi], [q].[mat_khau], [q].[ngay_chinh_sua], [q].[ngay_tao], [q].[nguoi_chinh_sua_id], [q].[nguoi_tao_id], [q].[salt_code], [q].[so_dien_thoai], [q].[super_admin], [q].[tai_khoan], [q].[ten], [q].[trang_thai]
+FROM [qtht_nguoi_dung] AS [q]
+WHERE [q].[id] = @__get_Item_0 
+2023-04-10 22:01:49.4782|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api) in 112.6837ms 
+2023-04-10 22:01:49.4782|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'App.Api.Controllers.DBAll.GC_LICH_HANG_NGAYController.Get (App.Api)' 
+2023-04-10 22:01:49.4782|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5000/api/link-GC_LICH_HANG_NGAY/?page=1&page_size=20&sort={%22id%22:%201}& - - - 200 - application/json;+charset=utf-8 126.6604ms 
+2023-04-10 22:15:18.5773|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 5.0.17 initialized 'PersistedGrantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=App.Data  
+2023-04-10 22:15:24.9446|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (206ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_0) [p].[Key], [p].[ClientId], [p].[ConsumedTime], [p].[CreationTime], [p].[Data], [p].[Description], [p].[Expiration], [p].[SessionId], [p].[SubjectId], [p].[Type]
+FROM [PersistedGrants] AS [p]
+WHERE [p].[Expiration] < GETUTCDATE()
+ORDER BY [p].[Key] 
+2023-04-10 22:15:24.9446||INFO|IdentityServer4.EntityFramework.TokenCleanupService|Removing 0 grants 
+2023-04-10 22:15:25.0168|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (40ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(@__p_0) [d].[UserCode], [d].[ClientId], [d].[CreationTime], [d].[Data], [d].[Description], [d].[DeviceCode], [d].[Expiration], [d].[SessionId], [d].[SubjectId]
+FROM [DeviceCodes] AS [d]
+WHERE [d].[Expiration] < GETUTCDATE()
+ORDER BY [d].[DeviceCode] 
+2023-04-10 22:15:25.0264||INFO|IdentityServer4.EntityFramework.TokenCleanupService|Removing 0 device flow codes 

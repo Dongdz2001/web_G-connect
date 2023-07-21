@@ -1,0 +1,126 @@
+﻿@model LoginViewModel
+<link rel="stylesheet" href="~/css/login-page.css" />
+<body class="login-page">
+
+
+    <div class="row">
+        <div class="col-md-7 illustration d-md-flex flex-column d-none">
+            <div class="container"></div>
+            <div class="container">
+                <div class="login-logo mb-3"></div>
+                <h4 class="mb-3">
+                    PHẦN MỀM QUẢN LÝ CÁC NHIỆM VỤ <br /> THUỘC CÁC CHƯƠNG TRÌNH KHOA HỌC VÀ CÔNG NGHỆ QUỐC GIA
+                </h4>
+                @*<h5>
+                        HỆ THỐNG QUẢN LÝ CÁC NHIỆM VỤ THUỘC CÁC CHƯƠNG TRÌNH KH&CN QUỐC GIA
+                    </h5>*@
+                <h6>
+                    Điện thoại: (84.24) 3.5551.726 - Fax: (84.24)3.5551.725</br>
+                    Email: vpctqg@most.gov.vn<br />
+                    Địa chỉ: 113 Trần Duy Hưng, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội
+                </h6>
+
+
+
+
+            </div>
+            <div class="container"></div>
+        </div>
+        <div class="col-md-5 login-content d-flex">
+
+            <div class="row align-items-center justify-content-center">
+                
+                @if (Model.VisibleExternalProviders.Any())
+                {
+            <div class="col-xl-8 col-10 align-self-start">
+
+            </div>}
+            <div class="col-xl-8 col-10">
+                <div class="mb-4 text-center d-block d-md-none">
+                    <div class="img-circle mr-auto ml-auto img-logo mb-2">
+                        <img class="img-circle m-auto" src="~/images/logo.png" />
+                    </div>                    
+                    <h6> PHẦN MỀM QUẢN LÝ CÁC NHIỆM VỤ THUỘC CÁC CHƯƠNG TRÌNH KHOA HỌC VÀ CÔNG NGHỆ QUỐC GIA </h6>
+                </div>
+                <div class="mb-3">
+                    <h6>Đăng nhập với tài khoản</h6>
+                </div>
+                <partial name="_ValidationSummary" />
+                @if (Model.EnableLocalLogin)
+                {
+            <form asp-route="Login">
+                <input type="hidden" asp-for="ReturnUrl" />
+
+                <div class="input-group mb-3">
+                    @*<label asp-for="Username"></label>*@
+                    <input class="form-control" placeholder="Tài khoản" asp-for="Username" autofocus>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="iconify" data-icon="mdi:account-key" data-inline="false" data-width="24" data-height="24"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    @*<label asp-for="Password"></label>*@
+                    <input type="password" class="form-control" placeholder="Mật khẩu" asp-for="Password" autocomplete="off">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="iconify" data-icon="mdi:form-textbox-password" data-inline="false" data-width="24" data-height="24"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        @if (Model.AllowRememberLogin)
+                        {
+            <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" asp-for="RememberLogin">
+                    <label class="custom-control-label" asp-for="RememberLogin">
+                        Nhớ đăng nhập
+                    </label>
+                </div>
+            </div>}
+                    </div>
+                    <div class="col-5">
+                        <button class="btn btn-primary btn-block" name="button" value="login">Đăng nhập</button>
+                    </div>
+                </div>
+                @*<button class="btn btn-secondary" name="button" value="cancel">Cancel</button>*@
+            </form>}
+                @if (Model.VisibleExternalProviders.Any())
+                {
+
+            <div class="social-auth-links text-center mb-3">
+                <p>- Hoặc -</p>
+                @foreach (var provider in Model.VisibleExternalProviders)
+                {
+
+            <a class="btn social btn-block btn-primary @provider.AuthenticationScheme.ToLower()"
+               asp-controller="External"
+               asp-action="Challenge"
+               asp-route-scheme="@provider.AuthenticationScheme"
+               asp-route-returnUrl="@Model.ReturnUrl">
+                <i class="social-icon mr-2">
+                    <span class="iconify" data-icon="fa:@provider.AuthenticationScheme.ToLower()" data-inline="false"></span>
+                </i>
+                Đăng nhập với @provider.DisplayName
+            </a>}
+            </div>}
+
+            </div>
+                <div class="col-xl-8 col-10 align-self-end pb-3">
+                    <strong>&copy;2021 Văn phòng các chương trình KH&CN quốc gia</strong>
+                </div>
+            </div>
+
+        </div>
+
+        @if (!Model.EnableLocalLogin && !Model.VisibleExternalProviders.Any())
+        {
+<div class="alert alert-warning">
+    <strong>Invalid login request</strong>
+    There are no login schemes configured for this request.
+</div>}
+    </div>
+</body>

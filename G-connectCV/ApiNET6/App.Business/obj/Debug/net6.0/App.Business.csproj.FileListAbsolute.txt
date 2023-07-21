@@ -1,0 +1,17 @@
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Business.deps.json
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Business.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Business.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Common.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Data.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Common.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\bin\Debug\net6.0\App.Data.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.csproj.AssemblyReference.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.AssemblyInfoInputs.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.AssemblyInfo.cs
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.csproj.CoreCompileInputs.cache
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.csproj.CopyComplete
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\refint\App.Business.dll
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\App.Business.pdb
+C:\Users\Duong Minh Dong\Desktop\G-connectCV\ApiNET6\App.Business\obj\Debug\net6.0\ref\App.Business.dll

@@ -1,0 +1,20 @@
+import { BaseService } from "services/BaseService";
+import { appSetting } from "shared/app-settings";
+
+class CLIENT_LICH_TUANBaseService extends BaseService {
+  constructor(props) {
+    const _props = Object.assign(
+      {},
+      { url: appSetting.PATH_APILMS_V2 + "/link-GC_LICH_TUAN" },
+      props
+    );
+    super(_props);
+  }
+
+  getAllRef_id_nguoi_thuc_hien() {
+    return this.getAllRef("/link-qtht_nguoi_dung/select");
+  }
+}
+
+const CLIENT_LICH_TUANService = new CLIENT_LICH_TUANBaseService();
+export { CLIENT_LICH_TUANService };

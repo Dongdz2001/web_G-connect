@@ -1,0 +1,431 @@
+import { t } from "i18next";
+import { GC_CONG_VIECService } from "modules/GC_CONG_VIEC/GC_CONG_VIECService";
+import { Button } from "primereact/button";
+import { Card } from "primereact/card";
+import { Column } from "primereact/column";
+import { DataTable } from "primereact/datatable";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { mapPaginator } from "shared/utils";
+import { decodeUnicode } from "shared/utils/decodeHtmlEntites";
+import { confirmDialogGlobal } from "shared/components/confirmDialogGlobal";
+import { getCurrentUserDefault } from "shared/utils/getCurrentUserDefault";
+import { DEFAULT_LIST_PARAM, DEFAULT_LIST_PAGE } from "shared/app-settings";
+import { setParamState } from "store/listParamSlice";
+import { useSelector } from "react-redux";
+import { Dropdown } from "primereact/dropdown";
+import Cong_viec_Form from "./Cong_viec_Form";
+import { Dialog } from "primereact/dialog";
+
+export default function cong_viec() {
+  const deleteMsg = "Bạn có chắc chắn xoá bản ghi này không?";
+  const labelDelete = "Xóa bản ghi";
+  const fieldID = "id";
+  const labelAdd = "Thêm bản ghi";
+  const titlePage = "Danh sách Công việc";
+  const fieldSort = "id";
+  const fieldSortOrder = "ASC";
+  const dispatch = useDispatch();
+  const [listItems, setListItems] = useState(null);
+  const [totalItems, setTotalItems] = useState(0);
+  const [selectedId, setSelectedId] = useState(null);
+  const [showDialogEdit, setShowDialogEdit] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [isToggle, setIsToggle] = useState(false);
+  const [selectedItems, setSelectedItems] = useState([]);
+  const [listRef_id_cong_viec_cha, setListRef_id_cong_viec_cha] = useState([]);
+  const [aDVSParams, setADVSParams] = useState({});
+  const listParamStore = useSelector((state) => {
+    var param = null;
+    if (
+      state.listParam.find((st) => st && st.name == window.location.toString())
+    )
+      param = state.listParam.find(
+        (st) => st && st.name == window.location.toString()
+      ).param;
+    return param;
+  });
+  const [lazyParams, setLazyParams] = useState({
+    ...DEFAULT_LIST_PARAM,
+    ...{
+      sortField: fieldSort,
+      sortOrder: fieldSortOrder == "ASC" ? -1 : 1,
+    },
+    ...listParamStore,
+  });
+  const loadLazyData = () => {
+    setLoading(true);
+    let advanceSearch = mapPaginator(lazyParams);
+    return GC_CONG_VIECService.filterPage(advanceSearch).then((res) => {
+      setTotalItems(res.data.meta.total);
+      setListItems(res.data.data);
+      setLoading(false);
+    });
+  };
+  const getListRef_id_cong_viec_cha = () => {
+    return GC_CONG_VIECService.getAllRef_id_cong_viec_cha().then((res) => {
+      res.data.map((x) => {
+        x.Value = x.value;
+        x.Text = x.label;
+      });
+      setListRef_id_cong_viec_cha(res.data);
+    });
+  };
+  useEffect(() => {
+    loadLazyData();
+  }, [lazyParams.refresh]);
+  useEffect(() => {
+    setTimeout(() => {
+      if (listParamStore && listParamStore.pageYOffset)
+        window.scrollTo(0, listParamStore.pageYOffset);
+    }, 100);
+
+    getListRef_id_cong_viec_cha();
+  }, [window.location.href]);
+  const toggle = () => {
+    if (!isToggle) {
+      document.body.classList.add("sidebar-collapse");
+    } else {
+      document.body.classList.remove("sidebar-collapse");
+    }
+    setIsToggle(!isToggle);
+  };
+  const editItem = async (id) => {
+    setSelectedId(id);
+    dispatch(setParamState({ ...lazyParams, pageYOffset: window.pageYOffset }));
+    setShowDialogEdit(true);
+  };
+  const deleteItem = async (id) => {
+    await GC_CONG_VIECService.delete(id);
+    loadLazyData();
+  };
+  const deleteItems = async (items) => {
+    for (var i = 0; i < items.length; i++) {
+      await GC_CONG_VIECService.delete(items[i][fieldID]);
+    }
+    loadLazyData();
+  };
+  const confirmDelete = (data) => {
+    confirmDialogGlobal({
+      message: deleteMsg,
+      accept: () =>
+        data ? deleteItem(data[fieldID]) : deleteItems(selectedItems),
+      rejectClassName: "btnClose",
+      acceptClassName: "p-button-danger",
+    });
+  };
+  const closeDialog = async () => {
+    setShowDialogEdit(false);
+  };
+  const onSelectionChange = (event) => {
+    const value = event.value;
+    setSelectedItems(value);
+  };
+  const onPage = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const onSort = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const paginatorLeft = (
+    <>
+      <Button
+        type="button"
+        icon="pi pi-refresh"
+        className="p-button-text p-button-secondary"
+        onClick={() => loadLazyData()}
+      />
+      <Dropdown
+        options={DEFAULT_LIST_PAGE}
+        className="mr-2"
+        value={lazyParams.rows}
+        onChange={(e) =>
+          setLazyParams({ ...lazyParams, first: 0, page: 1, rows: e.value })
+        }
+      />
+    </>
+  );
+  const actionBodyTemplate = (rowData) => {
+    return (
+      <React.Fragment>
+        <div className="flex flex-row justify-content-end">
+          <div onClick={() => editItem(rowData[fieldID])}>
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-pencil mr-2 flex align-items-center"></i>
+          </div>
+          <a onClick={() => confirmDelete(rowData)}>
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-trash mr-2 flex align-items-center p-button-danger p-button-outlined"></i>
+          </a>
+        </div>
+      </React.Fragment>
+    );
+  };
+  return (
+    <div>
+      <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" onClick={toggle}>
+              <i className="fas fa-bars"></i>
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a href="#" className="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link"
+              data-toggle="dropdown"
+              href="/login"
+              title="logout"
+              onClick={() => {
+                dispatch(removeToken());
+              }}
+            >
+              <i className="pi pi-sign-out" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside className="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
+        <div className="sidebar  d-flex flex-column align-items-center align-items-sm-start pt-2 pl-0 text-white min-vh-100">
+          <ul
+            className="nav nav-pills nav-sidebar  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+            id="menu1"
+          >
+            <li className="nav-item">
+              <Link to={{ pathname: "/overview" }} className="nav-link">
+                <i className="nav-icon fas fa-tachometer-alt" />
+                <p>{t("rbkey_ct_ovrvw", "Tổng quan")}</p>
+              </Link>
+              <ul
+                style={{ display: "none" }}
+                className="collapse nav flex-column"
+                id="tongquan"
+                data-bs-parent="#menu1"
+              ></ul>
+            </li>
+
+            <li className="nav-item">
+              <a href="/demo/lms-container" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>Demo</p>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/admin/ClientCorsOrigins" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>LMS Admin Vị trí</p>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/client/ClientCorsOrigin" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>LMS Client</p>
+              </a>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link"
+                to={"/issues/issue/" + getCurrentUserDefault().id}
+              >
+                <i className="nav-icon far fa-plus-square" />
+                <p>{" Các vấn đề cần giải quyết"}</p>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/duans/duan"}>
+                <i className="nav-icon far fa-plus-square" />
+                <p>{" Dự án"}</p>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a href="/checklist/ChecklistTable" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>Checklist Testing_Dev</p>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="/cong_viec_phan_cong/Cong_Viec_Phan_Cong"
+                className="nav-link"
+              >
+                <i className="nav-icon far fa-plus-square" />
+                <p>Công việc phân công</p>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/cong_viec/cong_viec" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>Danh sách công việc</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <Card title={titlePage} className="content-wrapper">
+        <Dialog
+          visible={showDialogEdit}
+          onHide={() => setShowDialogEdit(false)}
+          position="top"
+          breakpoints={{ "960px": "80vw" }}
+          style={{ width: "40vw" }}
+        >
+          <div className="flex justify-content-center flex-column">
+            <Cong_viec_Form
+              id={selectedId}
+              fnClose={closeDialog}
+              loadLazyData={loadLazyData}
+            ></Cong_viec_Form>
+          </div>
+        </Dialog>
+        <DataTable
+          value={listItems}
+          dataKey={fieldID}
+          emptyMessage={"Không có kết quả"}
+          size="small"
+          lazy
+          responsiveLayout="stack"
+          paginator
+          showGridlines
+          paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink"
+          currentPageReportTemplate="{first} - {last} / {totalRecords}"
+          paginatorLeft={paginatorLeft}
+          totalRecords={totalItems}
+          loading={loading}
+          rowsPerPageOptions={DEFAULT_LIST_PAGE}
+          rows={lazyParams.rows}
+          first={lazyParams.first}
+          sortField={lazyParams.sortField}
+          sortOrder={lazyParams.sortOrder}
+          onPage={onPage}
+          onSort={onSort}
+          onSelectionChange={onSelectionChange}
+          selection={selectedItems}
+          selectionMode="checkbox"
+        >
+          <Column
+            className="text-center"
+            style={{ width: "40px" }}
+            body={(rowData, item) => {
+              return <>{item.rowIndex + 1}</>;
+            }}
+            header="#"
+          />
+          <Column
+            selectionMode="multiple"
+            headerStyle={{ width: "3em" }}
+          ></Column>
+          <Column
+            field="stt"
+            sortable
+            header={"Thứ  tự"}
+            body={(rowData, column) => decodeUnicode(rowData.stt)}
+          />
+          <Column
+            field="id_chuc_nang"
+            sortable
+            header={"Chức năng"}
+            body={(rowData, column) => decodeUnicode(rowData.id_chuc_nang)}
+          />
+          <Column
+            field="id_cong_viec_cha"
+            sortable
+            header={"Công việc cha"}
+            body={(rowData, column) =>
+              decodeUnicode(rowData.ten_id_cong_viec_cha)
+            }
+          />
+          <Column
+            field="ma_cong_viec"
+            sortable
+            header={"Mã công việc"}
+            body={(rowData, column) => decodeUnicode(rowData.ma_cong_viec)}
+          />
+          <Column
+            field="ten_cong_viec"
+            sortable
+            header={"Tên công việc"}
+            body={(rowData, column) => decodeUnicode(rowData.ten_cong_viec)}
+          />
+          {/* <Column
+          field="is_cong_viec_nhom"
+          sortable
+          header={"Là công việc nhóm"}
+          body={(rowData, column) => decodeUnicode(rowData.is_cong_viec_nhom)}
+        />
+        <Column
+          field="is_da_code"
+          sortable
+          header={"Đã code"}
+          body={(rowData, column) => decodeUnicode(rowData.is_da_code)}
+        />
+        <Column
+          field="is_da_test"
+          sortable
+          header={"Đã test"}
+          body={(rowData, column) => decodeUnicode(rowData.is_da_test)}
+        /> */}
+          <Column
+            field="noi_dung"
+            sortable
+            header={"Nội dung"}
+            body={(rowData, column) => decodeUnicode(rowData.noi_dung)}
+          />
+          <Column
+            field="tham_khao"
+            sortable
+            header={"Tham khảo"}
+            body={(rowData, column) => decodeUnicode(rowData.tham_khao)}
+          />
+          <Column
+            field="so_ngay_estimate"
+            sortable
+            header={"Số ngày dự kiến"}
+            body={(rowData, column) => decodeUnicode(rowData.so_ngay_estimate)}
+          />
+
+          <Column
+            style={{ width: "80px" }}
+            className={"text-center"}
+            body={actionBodyTemplate}
+            header={<i className="pi pi-cog"></i>}
+            exportable={false}
+          ></Column>
+        </DataTable>
+        <div className="row mb-2">
+          <div className="col-12 col-sm-12">
+            {selectedItems?.length >= 0 ? (
+              <Button
+                className={
+                  "p-button-outlined " +
+                  (selectedItems?.length == 0
+                    ? "p-button-secondary p-disabled"
+                    : "p-button-danger")
+                }
+                disabled={selectedItems?.length == 0}
+                icon="pi pi-trash"
+                label={labelDelete}
+                onClick={() => confirmDelete()}
+                style={{ marginLeft: "5px" }}
+              />
+            ) : null}
+            <Link>
+              <Button icon="fa fa-plus" label={labelAdd} />
+            </Link>
+          </div>
+        </div>
+      </Card>
+    </div>
+  );
+}

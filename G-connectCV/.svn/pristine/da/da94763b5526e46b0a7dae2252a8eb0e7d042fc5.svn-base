@@ -1,0 +1,227 @@
+.tablesheet {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: transparent;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.tablesheet {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.tdsheet h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thsheet,
+.tdsheet {
+  padding: 0.35rem;
+  border-top: 1px solid #dcdcdc;
+  max-width: max-content;
+}
+
+.thsheet {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tdsheet,
+.thsheet {
+  background-color: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+.tablesheet > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* Thêm CSS cho thẻ <table> */
+.tablesheet {
+  border: 1px solid #dcdcdc;
+}
+
+/* Thêm CSS cho thẻ <th> */
+.thsheet {
+  font-weight: bold;
+  color: #212529;
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+/* Thêm CSS cho thẻ <td> */
+.tdsheet {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+
+  .titleTimeSheet{
+    display: flex;
+    margin: 20px 10px;
+    justify-content: space-between;
+  }
+  .titleSheetTable{
+    color: rgb(6, 191, 242);
+  }
+
+ 
+  .check-in-button,
+  .check-out-button {
+    padding: 5px 10px;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .check-in-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .check-out-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  .check-in-button,
+  .check-out-button{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  
+  }
+
+
+  .check-in-button:hover,
+  .check-out-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .check-in-button:active,
+  .check-out-button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+
+
+  .table-loading {
+    position: relative;
+  }
+  
+  .table-loading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(50, 46, 46, 0.5); /* màu nền hiện loading */
+    z-index: 999;
+  }
+  
+  .table-loading:after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #f3f3f3; /* màu của vòng tròn */
+    border-top: 4px solid #3498db; /* màu của vòng tròn */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    z-index: 1000;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+.button-prev,
+.button-next {
+  background: linear-gradient(to right, #4f4caf, #43388e); /* Màu gradient nền */
+  color: #FFF; /* Màu chữ */
+  border: none; /* Xóa viền */
+  border-radius: 4px; /* Bo góc */
+  padding: 0 20px; /* Khoảng cách giữa nội dung và viền */  
+  cursor: pointer; /* Biến con trỏ chuột thành dạng bấm */
+  transition: background 0.3s ease-in-out;  /* Hiệu ứng chuyển đổi màu nền */
+  
+}
+
+.button-prev:hover,
+.button-next:hover {
+  background: linear-gradient(to right, #2c2ecc, #1521ca); /* Màu gradient nền khi hover */
+}
+
+.log-time-button {
+  /* Căn giữa nút */
+  display: block;
+  margin-bottom: 10px;
+
+  /* Độ rộng và chiều cao của nút */
+  width: 100px;
+  height: 40px;
+
+  /* Màu nền và màu chữ của nút */
+  background-color: #007bff; /* Màu nền */
+  color: #ffffff; /* Màu chữ */
+  
+  /* Kiểu chữ và độ đậm */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  /* Đường viền và bo góc */
+  border: none;
+  border-radius: 5px;
+
+  /* Căn lề và độ đổ bóng */
+  padding: 5px 10px;
+  cursor: pointer; /* Biến con trỏ chuột thành dạng bấm */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+  /* Hiệu ứng hover */
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+.log-time-button:hover {
+  background-color: #0056b3; /* Màu nền hover */
+  cursor: pointer; /* Đổi con trỏ chuột thành dấu tay trỏ khi hover */
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  .log-time-button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+  }
+
+  

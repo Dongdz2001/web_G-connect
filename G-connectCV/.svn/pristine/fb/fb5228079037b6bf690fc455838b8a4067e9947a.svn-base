@@ -1,0 +1,15 @@
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+export default function CLIENT_LICH_TUANFormView({ id, fnClose }) {
+  let navigate = useNavigate();
+  const linkList = "/client/CL_LICH_TUAN";
+
+  useEffect(() => {
+    const close = async () => {
+      navigate(linkList);
+      //navigate(-1);
+    };
+  });
+  return <></>;
+}

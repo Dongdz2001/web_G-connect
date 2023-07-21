@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gAfWYcVf0nmysM8iKkyNtp950ZlwsOiXKtaXcZtj3SSyJDlpiNK6FFrtSYh5T6hb3SiWJXI9LukEGuWtrO0mqQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\App.Common\\App.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\documentformat.openxml\\2.12.1\\documentformat.openxml.2.12.1.nupkg.sha512",
+    "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

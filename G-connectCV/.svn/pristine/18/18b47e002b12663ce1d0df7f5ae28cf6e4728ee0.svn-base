@@ -1,0 +1,295 @@
+
+.layout-navbar-fixed .wrapper .main-header{
+    z-index: 1001;
+}
+.wrapper .content-wrapper {
+    min-height: calc(100vh - calc(3.5rem + 1px));
+}
+.h-flex{
+    min-height: calc(100vh - calc(5.5rem + 1px));
+}
+// fix lỗi mở calendar, chọn năm, sau đó bỏ chọn fix min-win của calendar
+.p-datepicker{
+    min-width: 273px !important;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.p-calendar-sm{
+    height: 32px;
+}
+
+.form-float-label .field {
+    margin-bottom: 1.5rem;
+}
+.p-inputwrapper-filled.p-multiselect.p-multiselect-chip .p-multiselect-label {
+    padding: 0.25rem 0.25rem;
+}
+// fix lệch label
+.p-float-label input:-webkit-autofill ~ label{
+    top: -11px;
+}
+.p-disabled, .p-disabled * {
+    cursor: not-allowed !important;
+    pointer-events: visible;
+    user-select: all;
+}
+.p-disabled, .p-component:disabled {
+    opacity: 1;
+}
+
+//custome tree
+.p-treetable .p-treetable-tbody > tr > td{
+    padding: 0.2rem
+}
+
+.tree-background-hidden> .p-tree-container .p-treenode .p-treenode-content.p-highlight{
+    background: none;
+}
+//
+.main-header{
+    z-index: 1000;
+}
+// fix change check box table - adminlte
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    transition-duration: 0s;
+}
+// 
+.block-component {
+    cursor: not-allowed;
+}
+.pointer-events-none {
+    pointer-events: none;
+}
+// custome style calendar
+.p-datepicker table td{
+    padding: 1px;
+}
+.p-datepicker .p-datepicker-header{
+    padding: 0.1rem
+}
+.p-datepicker .p-datepicker-buttonbar {
+    padding: 0.1rem 0;
+}
+
+.p-calendar .p-button{
+    padding-left: 1px;
+    background-color: transparent;
+    color: #64748B;
+    border-top:1px solid #b2c2d8 !important;
+    border-right:1px solid #b2c2d8 !important;
+    border-bottom:1px solid #b2c2d8 !important;
+    border-left:none !important;
+}
+.p-calendar button:hover{
+    background-color: transparent !important;
+    color: #64748B !important;
+    
+}
+// end custome style calendar
+// .p-chips .p-chips-multiple-container .p-chips-token{
+//     margin:2px;
+// }
+.btn.btn-out-dashed {
+    outline: 1px dashed #fff;
+    outline-offset: -5px;
+}
+
+/* custom flex grow */
+.flex-1 {
+    flex: 1 !important;
+  }
+  .flex-2 {
+    flex: 2 !important;
+  }
+  .flex-3 {
+    flex: 3 !important;
+  }
+  .flex-4{
+    flex: 4 !important;
+  }
+  .flex-5{
+    flex: 5 !important;
+  }
+  .flex-6{
+    flex: 6 !important;
+  }
+
+  .p-sidebar .p-sidebar-content {
+    padding: 0;
+  }
+
+
+  .overflow-y-disable{
+    overflow-y: hidden;
+  }
+  .overflow-y-auto{
+    position: relative;
+    overflow-y: auto !important; 
+  }
+
+  //custom font size
+  .fsx-10px{
+    font-size: 10px !important;
+  }
+  .fsx-11px{
+    font-size: 11px !important;
+  }
+  .fsx-12px{
+    font-size: 12px !important;
+  }
+  .fsx-13px{
+    font-size: 13px !important;
+  }
+
+  //thêm option ẩn header sidebar
+  .sidebar-header-none .p-sidebar-header{
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  .tdCenter {  
+    //display: block ruby !important;
+    text-align: center !important;
+  }
+  .p-datatable .p-column-header-content {
+    display: block;
+  }
+
+// .order{
+    
+//     &__header{
+//         height: 50px;
+//         border-bottom: 1px solid #ddd;
+//     }
+//     &__content{
+//         position: relative;
+//         height: calc(100vh - 46.5px - 50px - 50px - 13px);
+//         margin: 0;
+//         overflow-x: hidden !important;
+//       	overflow-y: auto !important;  /* <---------- required */
+        
+//     }
+//     &__footer{
+        
+//         height: 50px;
+//         background-color: #ddd;
+//     }
+//     &--overflow-y-disable{
+//         overflow-y: hidden;
+//     }
+// }
+
+.btnClose {  
+  margin-left: 5px !important;
+  background-color: whitesmoke !important;
+  color: #495057;
+}
+
+.field {
+  margin-bottom: 5px;
+}
+.p-button {
+  padding: 3px 14px;
+  margin-right: 2px;
+  display: inline-flex;
+}
+button.p-button {
+  background-color: #08c !important;
+  color: white !important;
+}
+button.p-disabled {
+  background-color: gray !important;
+  color: silver !important;
+}
+button.p-button-danger {
+  background-color: yellow !important;
+  color: red !important;
+}
+button.btnClose {
+  background-color: white !important;
+  color: gray !important;
+  font-style: italic;
+}
+button.p-button-icon-only, button.p-paginator-element {
+  padding: 2px 0;
+}
+.row-button a {
+  display: inline-flex;
+}
+.p-datatable-tbody a i {
+  height: 20px;
+}
+.p-inputtext {
+  padding: 3px 5px;
+}
+.advancedSearchBox .p-button {
+  padding: 3px 14px;
+}
+.p-inputgroup .p-button, .p-calendar .p-button {
+  padding: 0px;
+}
+.field span, .field .p-component {
+  width: 100%;
+}
+.row div {
+  padding: 2px;
+}
+#myTab {  
+  padding: 10px 0px;
+}
+#myTab li {  
+  font-style: italic;
+  list-style: none;
+}
+#myTab .numeric {  
+  padding: 1px 5px;
+  padding-left: 10px;
+  background: #0088cc;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #08c;
+}
+#myTab .active .numeric {
+  background: #444;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+#myTab img {  
+  margin: 0px 10px;
+}
+label.p-inputtext, .p-inputtext, .p-card-title {
+  color: #08c !important;
+}
+.p-card-title {
+  font-style: italic;
+}
+.p-paginator .p-paginator-element, .p-paginator .p-paginator-pages .p-paginator-page {
+  height: auto;
+}
+.p-paginator .p-paginator-element {
+  padding: 5px;
+}
+.p-paginator-left-content .p-button {
+  padding: 1px;  
+  top: -3px;
+}
+.p-paginator-left-content .p-dropdown {
+  height: auto;
+}
+.nav-tabs a {
+  font-weight: bold;
+  color: #08c;
+}
+.nav-item ul li {
+  padding-left: 8px;
+}
+.view-form {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    display: inline-flex;
+  }
+}

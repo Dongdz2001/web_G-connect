@@ -1,0 +1,426 @@
+import { Card } from "primereact/card";
+import { Column } from "primereact/column";
+import { Row } from "primereact/row";
+import { ColumnGroup } from "primereact/columngroup";
+import { DataTable } from "primereact/datatable";
+import { InputText } from "primereact/inputtext";
+import React, { useState, useEffect } from "react";
+import { DEFAULT_LIST_PARAM, DEFAULT_LIST_PAGE } from "shared/app-settings";
+import { useSelector } from "react-redux";
+import { mapPaginator } from "shared/utils";
+import { decodeUnicode } from "shared/utils/decodeHtmlEntites";
+
+import { GC_LICH_TUANService } from "modules/GC_LICH_TUAN/GC_LICH_TUANService";
+import { confirmDialogGlobal } from "shared/components/confirmDialogGlobal";
+import { useParams } from "react-router-dom";
+
+export default function CLIENT_LICH_TUANList(props) {
+  const { id } = useParams();
+  const [loading, setLoading] = useState(false);
+  const [listItems, setListItems] = useState(null);
+  const [selectedItems, setSelectedItems] = useState([]);
+  const fieldID = "id";
+  const fieldSort = "id";
+  const fieldSortOrder = "ASC";
+  const titlePage = "Danh sách Lịch tuần, lịch thực tập";
+  const [totalItems, setTotalItems] = useState(0);
+  const [listRef_id_nguoi_thuc_hien, setListRef_id_nguoi_thuc_hien] = useState(
+    []
+  );
+  const itemService = GC_LICH_TUANService;
+
+  const listParamStore = useSelector((state) => {
+    var param = null;
+    if (
+      state.listParam.find((st) => st && st.name == window.location.toString())
+    )
+      param = state.listParam.find(
+        (st) => st && st.name == window.location.toString()
+      ).param;
+    return param;
+  });
+  const [lazyParams, setLazyParams] = useState({
+    ...DEFAULT_LIST_PARAM,
+    ...{
+      sortField: fieldSort,
+      sortOrder: fieldSortOrder == "ASC" ? -1 : 1,
+    },
+    ...listParamStore,
+  });
+
+  useEffect(() => {
+    loadLazyData();
+  }, [lazyParams.refresh]);
+
+  useEffect(() => {
+    if (!listItems) return;
+    const userLogin = listItems.find((user) => user.id == id);
+    setUserLogin(userLogin);
+  }, [id]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (listParamStore && listParamStore.pageYOffset)
+        window.scrollTo(0, listParamStore.pageYOffset);
+    }, 100);
+
+    getListRef_id_nguoi_thuc_hien();
+  }, [window.location.href]);
+
+  const getListRef_id_nguoi_thuc_hien = () => {
+    return GC_LICH_TUANService.getAllRef_id_nguoi_thuc_hien().then((res) => {
+      res.data.map((x) => {
+        x.Value = x.value;
+        x.Text = x.label;
+      });
+      setListRef_id_nguoi_thuc_hien(res.data);
+    });
+  };
+
+  const onFilter = (event) => {
+    // setLazyParams({ ...lazyParams, page: 0, first: 0, refresh: Date.now() });
+  };
+  const onPage = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const onSort = (event) => {
+    setLazyParams({ ...lazyParams, ...event, refresh: Date.now() });
+  };
+  const onSelectionChange = (event) => {
+    const value = event.value;
+    setSelectedItems(value);
+  };
+  const onEnterKeySearch = (event) => {
+    //debugger
+    if (event.key === "Enter") {
+      onFilter();
+    }
+    //Backspace
+  };
+
+  const loadLazyData = () => {
+    setLoading(true);
+    let advanceSearch = mapPaginator(lazyParams);
+    return GC_LICH_TUANService.filterPage(advanceSearch).then((res) => {
+      setTotalItems(res.data.meta.total);
+      setListItems(res.data.data);
+      setLoading(false);
+    });
+  };
+
+  const deleteItems = async (items) => {
+    for (var i = 0; i < items.length; i++) {
+      await GC_LICH_TUANService.delete(items[i][fieldID]);
+    }
+    loadLazyData();
+  };
+  const confirmDelete = (data) => {
+    confirmDialogGlobal({
+      message: deleteMsg,
+      accept: () =>
+        data ? deleteItem(data[fieldID]) : deleteItems(selectedItems),
+      rejectClassName: "btnClose",
+      acceptClassName: "p-button-danger",
+    });
+  };
+  const actionBodyTemplate = (rowData, column, value) => {
+    console.log(rowData);
+    const [inputValue, setInputValue] = useState(value);
+
+    const handleChange = (e) => {
+      setInputValue(e.target.value);
+    };
+    const handleBlur = async () => {
+      if (column.field == "thu2_sang") {
+        rowData.thu2_sang = inputValue;
+      }
+      if (column.field == "thu2_chieu") {
+        rowData.thu2_chieu = inputValue;
+      }
+      if (column.field == "thu3_sang") {
+        rowData.thu3_sang = inputValue;
+      }
+      if (column.field == "thu3_chieu") {
+        rowData.thu3_chieu = inputValue;
+      }
+      if (column.field == "thu4_sang") {
+        rowData.thu4_sang = inputValue;
+      }
+      if (column.field == "thu4_chieu") {
+        rowData.thu4_chieu = inputValue;
+      }
+      if (column.field == "thu5_sang") {
+        rowData.thu5_sang = inputValue;
+      }
+      if (column.field == "thu5_chieu") {
+        rowData.thu5_chieu = inputValue;
+      }
+      if (column.field == "thu6_sang") {
+        rowData.thu6_sang = inputValue;
+      }
+      if (column.field == "thu6_chieu") {
+        rowData.thu6_chieu = inputValue;
+      }
+      if (column.field == "thu7_sang") {
+        rowData.thu7_sang = inputValue;
+      }
+      if (column.field == "thu7_chieu") {
+        rowData.thu7_chieu = inputValue;
+      }
+      await itemService.update(rowData.id, rowData);
+    };
+    return (
+      <InputText
+        value={inputValue ?? ""}
+        onBlur={handleBlur}
+        onChange={handleChange}
+        style={{ width: "36.1px" }}
+        className=""
+      />
+    );
+  };
+  const headerGroup = (
+    <ColumnGroup>
+      <Row>
+        <Column className="text-center" rowSpan={2} header="TT" />
+        <Column
+          className="text-center"
+          rowSpan={2}
+          field="id_nguoi_thuc_hien"
+          header="Nhân viên"
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu2"
+          header={"Thứ 2"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu3"
+          header={"Thứ 3"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu4"
+          header={"Thứ 4"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu5"
+          header={"Thứ 5"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu6"
+          header={"Thứ 6"}
+        />
+        <Column
+          className="text-center"
+          colSpan={2}
+          field="thu7"
+          header={"Thứ 7"}
+        />
+      </Row>
+      <Row>
+        <Column className="text-center" field="thu2_sang" header="Sáng" />
+        <Column className="text-center" field="thu2_chieu" header="Chiều" />
+        <Column className="text-center" field="thu3_sang" header="Sáng" />
+        <Column className="text-center" field="thu3_chieu" header="Chiều" />
+        <Column className="text-center" field="thu4_sang" header="Sáng" />
+        <Column className="text-center" field="thu4_chieu" header="Chiều" />
+        <Column className="text-center" field="thu5_sang" header="Sáng" />
+        <Column className="text-center" field="thu5_chieu" header="Chiều" />
+        <Column className="text-center" field="thu6_sang" header="Sáng" />
+        <Column className="text-center" field="thu6_chieu" header="Chiều" />
+        <Column className="text-center" field="thu7_sang" header="Sáng" />
+        <Column className="text-center" field="thu7_chieu" header="Chiều" />
+      </Row>
+    </ColumnGroup>
+  );
+  return (
+    <Card title={titlePage}>
+      <DataTable
+        value={listItems}
+        dataKey={fieldID}
+        emptyMessage={"Không có kết quả"}
+        size="small"
+        lazy
+        responsiveLayout="stack"
+        totalRecords={totalItems}
+        loading={loading}
+        rowsPerPageOptions={DEFAULT_LIST_PAGE}
+        rows={lazyParams.rows}
+        first={lazyParams.first}
+        sortField={lazyParams.sortField}
+        sortOrder={lazyParams.sortOrder}
+        onPage={onPage}
+        onSort={onSort}
+        onSelectionChange={onSelectionChange}
+        selection={selectedItems}
+        selectionMode="checkbox"
+        showGridlines
+        headerColumnGroup={headerGroup}
+      >
+        <Column
+          className="text-center"
+          rowSpan={2}
+          style={{ width: "40px" }}
+          body={(rowData, item) => {
+            return <>{item.rowIndex + 1}</>;
+          }}
+        />
+        <Column
+          className="text-center"
+          rowSpan={2}
+          field="id_nguoi_thuc_hien"
+          body={(rowData, column) =>
+            decodeUnicode(rowData.ten_id_nguoi_thuc_hien)
+          }
+        />
+        {/* <Column
+          className="text-center"
+          field="thu2_sang"
+          body={(rowData, column) => decodeUnicode(rowData.thu2_sang)}
+        /> */}
+        <Column
+          className="text-center"
+          field="thu2_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu2_sang);
+            } else {
+              return decodeUnicode(rowData.thu2_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu2_chieu"
+          body={(rowData, column) => {
+            console.log(rowData);
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu2_chieu);
+            } else {
+              return decodeUnicode(rowData.thu2_chieu);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu3_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu3_sang);
+            } else {
+              return decodeUnicode(rowData.thu3_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu3_chieu"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu3_chieu);
+            } else {
+              return decodeUnicode(rowData.thu3_chieu);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu4_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu4_sang);
+            } else {
+              return decodeUnicode(rowData.thu4_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu4_chieu"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu4_chieu);
+            } else {
+              return decodeUnicode(rowData.thu4_chieu);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu5_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu5_sang);
+            } else {
+              return decodeUnicode(rowData.thu5_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu5_chieu"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu5_chieu);
+            } else {
+              return decodeUnicode(rowData.thu5_chieu);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu6_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu6_sang);
+            } else {
+              return decodeUnicode(rowData.thu6_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu6_chieu"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu6_chieu);
+            } else {
+              return decodeUnicode(rowData.thu6_chieu);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu7_sang"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu7_sang);
+            } else {
+              return decodeUnicode(rowData.thu7_sang);
+            }
+          }}
+        />
+        <Column
+          className="text-center"
+          field="thu7_chieu"
+          body={(rowData, column) => {
+            if (rowData.id_nguoi_thuc_hien == id) {
+              return actionBodyTemplate(rowData, column, rowData.thu7_chieu);
+            } else {
+              return decodeUnicode(rowData.thu7_chieu);
+            }
+          }}
+        />
+      </DataTable>
+    </Card>
+  );
+}

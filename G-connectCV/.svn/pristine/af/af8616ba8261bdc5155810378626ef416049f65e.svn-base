@@ -1,0 +1,17 @@
+import { loadable } from "../shared/utils";
+
+const clientRouters = [
+  {
+    path: "/CL_LICH_TUAN/:id",
+    component: loadable(() =>
+      import("../modules/CLIENT_LICH_TUAN/CLIENT_LICH_TUANList")
+    ),
+  },
+  // {
+  //   path: "/CL_LICH_TUAN-form/:id",
+  //   component: loadable(() =>
+  //     import("../modules/CLIENT_LICH_TUAN/CLIENT_LICH_TUANForm")
+  //   ),
+  // },
+];
+export { clientRouters };

@@ -1,0 +1,253 @@
+import React, { useState, useEffect, useRef } from "react";
+import { setParamState } from "store/listParamSlice";
+import { useSelector, useDispatch } from "react-redux";
+import moment from "moment";
+import "moment/locale/vi";
+moment.locale("vi");
+import "./TableTimeSheet.css";
+import { Link } from "react-router-dom";
+import { t } from "i18next";
+import { Card } from "primereact/card";
+import { mapPaginator } from "shared/utils";
+import SheetTable from "components/SheetTable-component/SheetTable";
+import { GC_LICH_HANG_NGAYService } from "modules/GC_LICH_HANG_NGAY/GC_LICH_HANG_NGAYService";
+import { DEFAULT_LIST_PARAM, DEFAULT_LIST_PAGE } from "shared/app-settings";
+import { getCurrentUserDefault } from "shared/utils/getCurrentUserDefault";
+import { Button } from "primereact/button";
+import { InputText } from "primereact/inputtext";
+import { Dialog } from "primereact/dialog";
+import EditSheetTable from "components/EditSheetTable/EditSheetTable";
+
+  function TableBody(props) {
+    const {
+      daysInMonth,
+      currentDate,
+      monthlabel,
+      yearr,
+      checkInTime,
+      checkOutTime,
+      idUser,
+      loading,
+      loadingFuc,
+    } = props;
+    const openDialog = false;
+    const linkEdit = "/EditSheetTable";
+    const [listItems, setListItems] = useState(null);
+    const [totalItems, setTotalItems] = useState(0);
+    const [selectedId, setSelectedId] = useState(null);
+    const [showDialogEdit, setShowDialogEdit] = useState(false);
+    const fieldSortOrder = "ASC";
+    const fieldSort = "id";
+    const dispatch = useDispatch();
+    const listParamStore = useSelector((state) => {
+      var param = null;
+      if (
+        state.listParam.find((st) => st && st.name == window.location.toString())
+      )
+        param = state.listParam.find(
+          (st) => st && st.name == window.location.toString()
+        ).param;
+      return param;
+    });
+    const [lazyParams, setLazyParams] = useState({
+      ...DEFAULT_LIST_PARAM,
+      ...{
+        sortField: fieldSort,
+        sortOrder: fieldSortOrder == "ASC" ? -1 : 1,
+      },
+      ...listParamStore,
+    });
+    useEffect(() => {
+      loadLazyData();
+    }, [lazyParams.refresh]);
+    useEffect(() => {
+      setTimeout(() => {
+        if (listParamStore && listParamStore.pageYOffset)
+          window.scrollTo(0, listParamStore.pageYOffset);
+      }, 100);
+
+      // getListRef_id_nguoi_thuc_hien();
+      // getListRef_id_cong_viec();
+    }, [window.location.href]);
+    const loadLazyData = () => {
+      loadingFuc(true);
+      let advanceSearch = mapPaginator(lazyParams);
+      return GC_LICH_HANG_NGAYService.filterPage(advanceSearch).then((res) => {
+        setTotalItems(res.data.meta.total);
+        setListItems(res.data.data);
+        loadingFuc(false);
+      });
+    };
+    const editItem = async (id) => {
+      setSelectedId(id);
+      dispatch(setParamState({ ...lazyParams, pageYOffset: window.pageYOffset }));
+      if (!openDialog) setShowDialogEdit(true);
+    };
+    const closeDialog = async () => {
+      setShowDialogEdit(false);
+      await loadLazyData();
+    };
+    //  Trả về xâu dạng DD/mm xử lý từ chuỗi gốc
+    const stringProcessDayMonth = (chuoi) => {
+      // Chuyển chuỗi về đối tượng Date trong JavaScript
+      const date = new Date(chuoi);
+
+      // Lấy ngày và tháng từ đối tượng Date
+      const ngay = String(date.getDate()).padStart(2, "0"); // Lấy ngày và đảm bảo có 2 chữ số
+      const thang = String(date.getMonth() + 1).padStart(2, "0"); // Lấy tháng (bắt đầu từ 0) và đảm bảo có 2 chữ số
+
+      // Tạo chuỗi ngày tháng mới theo định dạng "dd/mm"
+      const ngayThang = `${ngay}/${thang}`;
+      return ngayThang;
+    };
+
+    const stringProcessMonthYear = (str) => {
+      const date = new Date(str);
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const year = String(date.getFullYear());
+      return `${month}/${year}`;
+    };
+
+    return (
+      <tbody>
+        <Dialog visible={showDialogEdit} onHide={() => setShowDialogEdit(false)}>
+          <EditSheetTable id={selectedId} fnClose={closeDialog} />
+        </Dialog>
+        {listItems &&
+          listItems.map((row, index) => {
+            const Cells = [];
+            // const userRow = listItems?.find(item => item.id === idUser);
+            const today = moment().startOf("day");
+
+            for (let i = 1; i <= daysInMonth; i++) {
+              const currentDateObj = moment(currentDate).date(i).startOf("day");
+              const isToday = currentDateObj.isSame(today);
+              const isDisable = !isToday;
+
+              console.log(
+                `data: ${stringProcessMonthYear(
+                  row.ngay_lam_viec
+                )} ---  ${monthlabel.toString().padStart(2, "0")}/${yearr}`
+              );
+              // Kiểm tra tháng năm làm việc đúng tháng chưa
+              if (
+                stringProcessMonthYear(row.ngay_lam_viec) ===
+                `${monthlabel.toString().padStart(2, "0")}/${yearr}`
+              ) {
+                // kiểm tra xem người thực hiện có trùng ip với người đăng nhập hay không
+                if (row.id_nguoi_thuc_hien === getCurrentUserDefault().id) {
+                  Cells.push(
+                    <td key={i} className="tdsheet">
+                      {isDisable ? (
+                        <button
+                          onClick={() => editItem(row.id)}
+                          style={{
+                            border: "none",
+                            background: "none",
+                            padding: "0px",
+                          }}
+                        >
+                          --
+                        </button>
+                      ) : (
+                        <>
+                          <p style={{ width: "80px" }}>{checkInTime || "_"}</p>
+                          <button
+                            onClick={() => editItem(row.id)}
+                            style={{
+                              border: "none",
+                              background: "none",
+                              padding: "0px",
+                            }}
+                          >
+                            {row.so_gio ? row.so_gio : "__"}
+                          </button>
+                          <p style={{ width: "80px" }}>{checkOutTime || "_"}</p>
+                        </>
+                      )}
+                    </td>
+                  );
+                } else {
+                  // lây ra ngày làm việc (DD/MM) của Object hiện tại
+                  const indexDay = stringProcessDayMonth(row.ngay_lam_viec);
+
+                  indexDay === stringProcessDayMonth(row.ngay_lam_viec)
+                    ? Cells.push(
+                        <td key={i} className="tdsheet">
+                          {isDisable ? (
+                            <button
+                              onClick={() => editItem(row.id)}
+                              style={{
+                                border: "none",
+                                background: "none",
+                                padding: "0px",
+                              }}
+                            >
+                              --
+                            </button>
+                          ) : (
+                            <>
+                              <h2 style={{ width: "80px" }}>{"_"}</h2>
+                              <h2>{"_"}</h2>
+                            </>
+                          )}
+                        </td>
+                      )
+                    : Cells.push(
+                        <td key={i} className="tdsheet">
+                          <button
+                            onClick={() => editItem(row.id)}
+                            style={{
+                              border: "none",
+                              background: "none",
+                              padding: "0px",
+                            }}
+                          >
+                            --
+                          </button>
+                        </td>
+                      );
+                }
+              } else {
+                Cells.push(
+                  <td key={i} className="tdsheet">
+                    <button
+                      onClick={() => editItem(row.id)}
+                      style={{
+                        border: "none",
+                        background: "none",
+                        padding: "0px",
+                      }}
+                    >
+                      --
+                    </button>
+                  </td>
+                );
+              }
+            }
+            return (
+              <tr key={row.id} className="trsheet">
+                <td className="tdsheet">
+                  {" "}
+                  <p style={{ marginTop: "30px" }}> {index + 1} </p>{" "}
+                </td>
+                <td className="tdsheet">
+                  <p style={{ width: "150px", marginTop: "30px" }}>
+                    {" "}
+                    {row.ten_id_nguoi_thuc_hien}{" "}
+                  </p>{" "}
+                </td>
+                <td className="tdsheet">
+                  <p style={{ widthMax: "200px", marginTop: "20px" }}>
+                    {" "}
+                    {row.ten_id_cong_viec}{" "}
+                  </p>
+                </td>
+                {Cells}
+              </tr>
+            );
+          })}
+      </tbody>
+    );
+  }
+  export default TableBody;

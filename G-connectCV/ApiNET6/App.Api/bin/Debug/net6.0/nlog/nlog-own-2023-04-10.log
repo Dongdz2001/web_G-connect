@@ -1,0 +1,50 @@
+2023-04-10 21:14:30.7559||DEBUG|App.Api.Program|init main |url: |action: 
+2023-04-10 21:14:46.3728||INFO|IdentityServer4.Startup|Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f |url: |action: 
+2023-04-10 21:14:46.4444||INFO|IdentityServer4.Startup|Using the default authentication scheme oidc for IdentityServer |url: |action: 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for authentication |url: |action: 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-in |url: |action: 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-out |url: |action: 
+2023-04-10 21:14:46.4444||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for challenge |url: |action: 
+2023-04-10 21:14:46.4567||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for forbid |url: |action: 
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Login Url: /Account/Login |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Login Return Url Parameter: ReturnUrl |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6150||DEBUG|IdentityServer4.Startup|Logout Url: /Account/Logout |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|ConsentUrl Url: /consent |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Consent Return Url Parameter: returnUrl |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Error Url: /home/error |url: https://localhost/|action: Index
+2023-04-10 21:14:50.6295||DEBUG|IdentityServer4.Startup|Error Id Parameter: errorId |url: https://localhost/|action: Index
+2023-04-10 21:15:06.8824||DEBUG|App.Api.Program|init main |url: |action: 
+2023-04-10 21:15:17.5531||INFO|IdentityServer4.Startup|Starting IdentityServer4 version 4.1.1+cebd52f5bc61bdefc262fd20739d4d087c6f961f |url: |action: 
+2023-04-10 21:15:17.6073||INFO|IdentityServer4.Startup|Using the default authentication scheme oidc for IdentityServer |url: |action: 
+2023-04-10 21:15:17.6073||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for authentication |url: |action: 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-in |url: |action: 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for sign-out |url: |action: 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for challenge |url: |action: 
+2023-04-10 21:15:17.6151||DEBUG|IdentityServer4.Startup|Using oidc as default ASP.NET Core scheme for forbid |url: |action: 
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Login Url: /Account/Login |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Login Return Url Parameter: ReturnUrl |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8329||DEBUG|IdentityServer4.Startup|Logout Url: /Account/Logout |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|ConsentUrl Url: /consent |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Consent Return Url Parameter: returnUrl |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Error Url: /home/error |url: https://localhost/|action: Index
+2023-04-10 21:15:20.8487||DEBUG|IdentityServer4.Startup|Error Id Parameter: errorId |url: https://localhost/|action: Index
+2023-04-10 22:01:31.4909||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:01:34.8683||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:01:40.5545||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:40.5545||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CHUC_NANG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_CHUC_NANG/select|action: GetSelect
+2023-04-10 22:01:40.6013||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_VAN_DE_CAN_GIAI_QUYET/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_VAN_DE_CAN_GIAI_QUYET/|action: Get
+2023-04-10 22:01:40.6148||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CONG_VIEC_PHAN_CONG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_CONG_VIEC_PHAN_CONG/select|action: GetSelect
+2023-04-10 22:01:40.7872||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:40.9097||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:45.2583||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CHUC_NANG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_CHUC_NANG/select|action: GetSelect
+2023-04-10 22:01:45.2583||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_VAN_DE_CAN_GIAI_QUYET/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_VAN_DE_CAN_GIAI_QUYET/|action: Get
+2023-04-10 22:01:45.2687||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_CONG_VIEC_PHAN_CONG/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_CONG_VIEC_PHAN_CONG/select|action: GetSelect
+2023-04-10 22:01:45.2687||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:45.5813||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:45.6448||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-qtht_nguoi_dung/select from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-qtht_nguoi_dung/select|action: GetSelect
+2023-04-10 22:01:46.6001||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:01:46.7107||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:01:49.2388||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:01:49.3493||DEBUG|IdentityServer4.Hosting.CorsPolicyProvider|CORS request made for path: /api/link-GC_LICH_HANG_NGAY/ from origin: http://localhost:8087 but was ignored because path was not for an allowed IdentityServer CORS endpoint |url: http://localhost/api/link-GC_LICH_HANG_NGAY/|action: Get
+2023-04-10 22:15:24.9446||INFO|IdentityServer4.EntityFramework.TokenCleanupService|Removing 0 grants |url: |action: 
+2023-04-10 22:15:25.0264||INFO|IdentityServer4.EntityFramework.TokenCleanupService|Removing 0 device flow codes |url: |action: 

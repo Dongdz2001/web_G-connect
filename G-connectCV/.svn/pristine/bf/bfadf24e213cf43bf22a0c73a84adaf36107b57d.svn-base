@@ -1,0 +1,385 @@
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import { t } from "i18next";
+import { Card } from "primereact/card";
+import { Column } from "primereact/column";
+import { DataTable } from "primereact/datatable";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+dayjs.extend(utc);
+export default function Cong_Viec_Phan_Cong() {
+  const titlePage = "Danh sách Title of GC_CONG_VIEC_PHAN_CONG";
+  const [isToggle, setIsToggle] = useState(false);
+  const toggle = () => {
+    if (!isToggle) {
+      document.body.classList.add("sidebar-collapse");
+    } else {
+      document.body.classList.remove("sidebar-collapse");
+    }
+    setIsToggle(!isToggle);
+    // document.body.classList.remove('overflow-y-disable');
+  };
+  const columnBodyDate = (date) => {
+    return dayjs(date).format("DD/MM/YYYY HH:mm");
+  };
+  const actionBodyTemplate = (rowData) => {
+    return (
+      <React.Fragment>
+        <div className="flex flex-row justify-content-end">
+          <Link
+            to={openDialog ? null : linkEdit + "/" + rowData[fieldID]}
+            onClick={() => editItem(rowData[fieldID])}
+          >
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-pencil mr-2 flex align-items-center"></i>
+          </Link>
+          <Link
+            to={openDialog ? null : linkView + "/" + rowData[fieldID]}
+            onClick={() => viewItem(rowData[fieldID])}
+          >
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-info-circle mr-2 flex align-items-center"></i>
+          </Link>
+          <a onClick={() => confirmDelete(rowData)}>
+            <i className="p-button-rounded p-button p-button-text p-1 pi pi-trash mr-2 flex align-items-center p-button-danger p-button-outlined"></i>
+          </a>
+        </div>
+      </React.Fragment>
+    );
+  };
+  return (
+    <div>
+      <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" onClick={toggle}>
+              <i className="fas fa-bars"></i>
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a className="nav-link" href="/">
+              Home
+            </a>
+          </li>
+          <li className="nav-item d-none d-sm-inline-block">
+            <a href="#" className="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link"
+              data-toggle="dropdown"
+              href="/login"
+              title="logout"
+              onClick={() => {
+                dispatch(removeToken());
+              }}
+            >
+              <i className="pi pi-sign-out" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside className="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
+        <div className="sidebar  d-flex flex-column align-items-center align-items-sm-start pt-2 pl-0 text-white min-vh-100">
+          <ul
+            className="nav nav-pills nav-sidebar  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+            id="menu1"
+          >
+            <li className="nav-item">
+              <Link to={{ pathname: "/overview" }} className="nav-link">
+                <i className="nav-icon fas fa-tachometer-alt" />
+                <p>{t("rbkey_ct_ovrvw", "Tổng quan")}</p>
+              </Link>
+              <ul
+                style={{ display: "none" }}
+                className="collapse nav flex-column"
+                id="tongquan"
+                data-bs-parent="#menu1"
+              ></ul>
+            </li>
+
+            <li className="nav-item">
+              <a href="/demo/lms-container" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>Demo</p>
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a href="/admin/ClientCorsOrigins" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>LMS Admin Vị trí</p>
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a href="/checklist/ChecklistTable" className="nav-link">
+                <i className="nav-icon far fa-plus-square" />
+                <p>Checklist Testing_Dev</p>
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                href="/cong_viec_phan_cong/Cong_Viec_Phan_Cong"
+                className="nav-link"
+              >
+                <i className="nav-icon far fa-plus-square" />
+                <p>Công việc phân công</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <Card className="content-wrapper" title={titlePage}>
+        <DataTable
+        // value={listItems}
+        // dataKey={fieldID}
+        // emptyMessage={"Không có kết quả"}
+        // size="small"
+        // lazy
+        // responsiveLayout="stack"
+        // paginator
+        // showGridlines
+        // paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink"
+        // currentPageReportTemplate="{first} - {last} / {totalRecords}"
+        // paginatorLeft={paginatorLeft}
+        // totalRecords={totalItems}
+        // loading={loading}
+        // rowsPerPageOptions={DEFAULT_LIST_PAGE}
+        // rows={lazyParams.rows}
+        // first={lazyParams.first}
+        // sortField={lazyParams.sortField}
+        // sortOrder={lazyParams.sortOrder}
+        // onPage={onPage}
+        // onSort={onSort}
+        // onSelectionChange={onSelectionChange}
+        // selection={selectedItems}
+        // selectionMode="checkbox"
+        >
+          <Column
+            className="text-center"
+            style={{ width: "40px" }}
+            body={(rowData, item) => {
+              return <>{item.rowIndex + 1}</>;
+            }}
+            header="#"
+          />
+          <Column
+            selectionMode="multiple"
+            headerStyle={{ width: "3em" }}
+          ></Column>
+
+          <Column
+            field="id_chuc_nang"
+            sortable
+            header={"Chức năng"}
+            body={(rowData, column) => decodeUnicode(rowData.ten_id_chuc_nang)}
+          />
+          <Column
+            field="id_cong_viec"
+            sortable
+            header={"Công việc"}
+            body={(rowData, column) => decodeUnicode(rowData.ten_id_cong_viec)}
+          />
+          <Column
+            field="id_trang_thai"
+            sortable
+            header={"Trạng thái"}
+            body={(rowData, column) => decodeUnicode(rowData.ten_id_trang_thai)}
+          />
+          <Column
+            field="id_nguoi_thuc_hien"
+            sortable
+            header={"Người thực hiện"}
+            body={(rowData, column) =>
+              decodeUnicode(rowData.ten_id_nguoi_thuc_hien)
+            }
+          />
+          <Column
+            field="id_nguoi_phoi_hop"
+            sortable
+            header={"Người phối hợp"}
+            body={(rowData, column) =>
+              decodeUnicode(rowData.ten_id_nguoi_phoi_hop)
+            }
+          />
+          <Column
+            field="id_nguoi_duyet"
+            sortable
+            header={"Người duyệt"}
+            body={(rowData, column) =>
+              decodeUnicode(rowData.ten_id_nguoi_duyet)
+            }
+          />
+          <Column
+            field="ma_cong_viec"
+            sortable
+            header={"Mã công việc"}
+            body={(rowData, column) => decodeUnicode(rowData.ma_cong_viec)}
+          />
+          <Column
+            field="ten_cong_viec"
+            sortable
+            header={"Tên công việc"}
+            body={(rowData, column) => decodeUnicode(rowData.ten_cong_viec)}
+          />
+          <Column
+            field="stt"
+            sortable
+            header={"Thứ  tự"}
+            body={(rowData, column) => decodeUnicode(rowData.stt)}
+          />
+          <Column
+            field="is_cong_viec_nhom"
+            sortable
+            header={"Là công việc nhóm"}
+            body={(rowData, column) => decodeUnicode(rowData.is_cong_viec_nhom)}
+          />
+          <Column
+            field="is_da_code"
+            sortable
+            header={"Đã code"}
+            body={(rowData, column) => decodeUnicode(rowData.is_da_code)}
+          />
+          <Column
+            field="is_da_test"
+            sortable
+            header={"Đã test"}
+            body={(rowData, column) => decodeUnicode(rowData.is_da_test)}
+          />
+          <Column
+            field="is_da_nop_bai"
+            sortable
+            header={"Đã nộp bài"}
+            body={(rowData, column) => decodeUnicode(rowData.is_da_nop_bai)}
+          />
+          <Column
+            field="is_da_duyet"
+            sortable
+            header={"Đã duyệt"}
+            body={(rowData, column) => decodeUnicode(rowData.is_da_duyet)}
+          />
+          <Column
+            field="noi_dung"
+            sortable
+            header={"Nội dung"}
+            body={(rowData, column) => decodeUnicode(rowData.noi_dung)}
+          />
+          <Column
+            field="tham_khao"
+            sortable
+            header={"Tham khảo"}
+            body={(rowData, column) => decodeUnicode(rowData.tham_khao)}
+          />
+          <Column
+            field="dac_ta"
+            sortable
+            header={"Đặc tả"}
+            body={(rowData, column) => decodeUnicode(rowData.dac_ta)}
+          />
+          <Column
+            field="tra_loi"
+            sortable
+            header={"Trả lời"}
+            body={(rowData, column) => decodeUnicode(rowData.tra_loi)}
+          />
+          <Column
+            field="log_review"
+            sortable
+            header={"Log review"}
+            body={(rowData, column) => decodeUnicode(rowData.log_review)}
+          />
+          <Column
+            field="file_ket_qua"
+            sortable
+            header={"File kết quả"}
+            body={(rowData, column) => decodeUnicode(rowData.file_ket_qua)}
+          />
+          <Column
+            field="so_ngay_estimate"
+            sortable
+            header={"Số ngày dự kiến"}
+            body={(rowData, column) => decodeUnicode(rowData.so_ngay_estimate)}
+          />
+          <Column
+            field="so_ngay_thuc_hien"
+            sortable
+            header={"Số ngày thực hiện"}
+            body={(rowData, column) => decodeUnicode(rowData.so_ngay_thuc_hien)}
+          />
+          <Column
+            style={{ width: "200px" }}
+            className={"text-center"}
+            field="ngay_ket_thuc_du_kien"
+            body={(rowData, column) =>
+              columnBodyDate(rowData.ngay_ket_thuc_du_kien)
+            }
+            header={"ngay_ket_thuc_du_kien"}
+          />
+          <Column
+            style={{ width: "200px" }}
+            className={"text-center"}
+            field="ngay_bat_dau"
+            body={(rowData, column) => columnBodyDate(rowData.ngay_bat_dau)}
+            header={"ngay_bat_dau"}
+          />
+          <Column
+            style={{ width: "200px" }}
+            className={"text-center"}
+            field="ngay_ket_thuc"
+            body={(rowData, column) => columnBodyDate(rowData.ngay_ket_thuc)}
+            header={"ngay_ket_thuc"}
+          />
+          <Column
+            field="diem_so"
+            sortable
+            header={"Điểm đánh giá"}
+            body={(rowData, column) => decodeUnicode(rowData.diem_so)}
+          />
+          {/* <Column
+            field="nguoi_tao_id"
+            sortable
+            header={"Title of nguoi_tao_id"}
+            body={(rowData, column) => decodeUnicode(rowData.nguoi_tao_id)}
+          /> */}
+          <Column
+            style={{ width: "200px" }}
+            className={"text-center"}
+            field="ngay_tao"
+            body={(rowData, column) => columnBodyDate(rowData.ngay_tao)}
+            header={"ngay_tao"}
+          />
+          {/* <Column
+            field="nguoi_chinh_sua_id"
+            sortable
+            header={"Title of nguoi_chinh_sua_id"}
+            body={(rowData, column) =>
+              decodeUnicode(rowData.nguoi_chinh_sua_id)
+            }
+          /> */}
+          {/* <Column
+            style={{ width: "200px" }}
+            className={"text-center"}
+            field="ngay_chinh_sua"
+            body={(rowData, column) => columnBodyDate(rowData.ngay_chinh_sua)}
+            header={"ngay_chinh_sua"}
+          /> */}
+
+          <Column
+            style={{ width: "80px" }}
+            className={"text-center"}
+            body={actionBodyTemplate}
+            header={<i className="pi pi-cog"></i>}
+            exportable={false}
+          ></Column>
+        </DataTable>
+      </Card>
+    </div>
+  );
+}

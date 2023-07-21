@@ -1,0 +1,14 @@
+import React from 'react'
+import { BaseService } from 'services/BaseService';
+import { appSetting } from 'shared/app-settings';
+
+const IssueServices = () => {
+  
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default IssueServices

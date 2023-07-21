@@ -1,0 +1,468 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Api\\App.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Api\\App.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Api\\App.Api.csproj",
+        "projectName": "App.Api",
+        "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Api\\App.Api.csproj",
+        "packagesPath": "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duong Minh Dong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\App.Business.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\App.Business.csproj"
+              },
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj"
+              },
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Authentication.MicrosoftAccount": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Twitter": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Authentication.WsFederation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21321.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.7, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.14.5, )"
+            },
+            "NetOfficeFw.Core": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "NetOfficeFw.Excel": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "NetOfficeFw.Word": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\App.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\App.Business.csproj",
+        "projectName": "App.Business",
+        "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\App.Business.csproj",
+        "packagesPath": "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duong Minh Dong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj"
+              },
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Data": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.2.1, )"
+            },
+            "Google.Apis.Calendar.v3": {
+              "target": "Package",
+              "version": "[1.50.0.2224, )"
+            },
+            "MailMergeLib": {
+              "target": "Package",
+              "version": "[5.7.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.DynamicLinq": {
+              "target": "Package",
+              "version": "[3.2.7, )"
+            },
+            "NetOfficeFw.Core": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "NetOfficeFw.Excel": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "NetOfficeFw.Word": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
+            "OpenXmlPowerTools-NetStandard": {
+              "target": "Package",
+              "version": "[4.4.21, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj",
+        "projectName": "App.Common",
+        "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj",
+        "packagesPath": "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duong Minh Dong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj",
+        "projectName": "App.Data",
+        "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\App.Data.csproj",
+        "packagesPath": "C:\\Users\\Duong Minh Dong\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Duong Minh Dong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj": {
+                "projectPath": "C:\\Users\\Duong Minh Dong\\Desktop\\G-connectCV\\ApiNET6\\ApiNET6\\App.Common\\App.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EFCore.BulkExtensions": {
+              "target": "Package",
+              "version": "[3.6.6, )"
+            },
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "IdentityServer4.EntityFramework": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21321.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
